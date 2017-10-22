@@ -6,11 +6,6 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
 public class Crawler extends Thread {
-
-	public Crawler(String roomName, int roomId) {
-
-	}
-	
 	
 	public static void main(String[] args) throws IOException {
 		Document doc = Jsoup.connect("http://cn.bing.com/search?q=big+data+learning").get();
