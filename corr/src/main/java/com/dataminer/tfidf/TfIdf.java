@@ -147,6 +147,19 @@ public class TfIdf {
 		}
 		return tfIdf;
 	}
+	
+	public static Map<String, Double> tfIdf(Map<String, Double> tf) {
+		Map<String, Double> tfIdf = new HashMap<>();
+		for (String term : tf.keySet()) {
+			tfIdf.put(term, tf.get(term) * idf(term));
+			
+			System.out.println(term + ":::" + tfIdf.get(term));
+		}
+		
+		return tfIdf;
+	}
+	
+	
 
 	/**
 	 * Unnormalized tf-idf for a document
