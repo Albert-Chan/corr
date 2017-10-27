@@ -3,6 +3,8 @@ package com.dataminer.crawler;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -10,22 +12,35 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.stream.Stream;
+
+import org.jsoup.Jsoup;
 
 import com.dataminer.tfidf.TfIdf;
+import com.dataminer.tfidf.ngram.NGram;
 import com.google.common.collect.ArrayListMultimap;
+import com.google.common.collect.Lists;
 import com.google.common.collect.Multimaps;
 
-public class Crawler extends Thread {
+public class Crawler3 extends Thread {
 
 	public static void main(String[] args) throws IOException {
 
 		System.out.println(new Date());
 
-		System.out.println(BingCN.getResultCount("big data learning"));
+//		StringBuilder sb = new StringBuilder();
+//		try (Stream<String> stream = Files.lines(Paths.get("quora"))) {
+//			stream.filter(line -> line.length() > 0).forEach(line -> sb.append(line));
+//		} catch (IOException e1) {
+//			e1.printStackTrace();
+//		}
+//		String content = sb.toString();
+		
+		String content = BingCN.getContent("https://www.quora.com/How-do-you-learn-big-data");
+		System.out.println(content);
 
-		BingCN.getQueryResults("big data learning");
-
-		Collection<String> terms = BingCN.sample("big data learning");
+		Collection<String> terms = NGram.ngramDocumentTerms(Lists.newArrayList(1, 2, 3), content);
+		
 		Map<String, Double> tf = TfIdf.tf(terms);
 		Map<String, Double> tfIdf = TfIdf.tfIdf(tf);
 

@@ -1,0 +1,2497 @@
+Big Data Analysis
+Analyzing Big Data
+Data
+Data Analysis
+Big Data
+Data Science
+Learning
+How do you learn big data?
+Promoted by Time Doctor
+Software for productivity tracking.
+Time tracking and productivity improvement software with screenshots and website and applications.
+Free trial at timedoctor.com
+Answer Wiki
+
+Basics
+
+CS Fundamentals
+Brown University - On-Line Offering (Introduction to Programming Languages)
+Coursera - Cryptography I - Stanford University | Coursera , Game Theory - Stanford University, The University of British Columbia | Coursera , Introduction to Logic - Stanford University | Coursera
+Udacity - Applied Cryptography and Encryption Class Online | Udacity, Software Testing | Udacity, Software Debugging Class Online | Udacity
+MIT OCW - Multivariable Calculus, Linear Algebra, Introduction to Algorithms, Mathematics for Computer Science
+Stanford University - Computer Science 101
+The Algorithm Design Manual: Steven S Skiena: 8580001218441: Amazon.com: Books
+Coding
+Udacity - Intro to Computer Science | Udacity, Design of Computer Programs | Udacity
+DataCamp - Learn Python for Data Science - Online Course, Free Introduction to R Programming Online Course
+MIT OCW - Introduction to Programming in Java
+Google's Python Class | Python Education
+ | Google Developers
+Coursera - Programming Languages, Part A - University of Washington | Coursera, Learn to Program: Crafting Quality Code - University of Toronto | Coursera, Learn to Program: The Fundamentals - University of Toronto | Coursera, An Introduction to Interactive Programming in Python (Part 1) - Rice University | Coursera
+Oracle - Java Developer Tutorials and Online Training
+SQL
+SQLZOO
+Big Data Courses
+
+Big Data University - What Is Big Data? Take Our Free Big Data Course to Find Out, Learn Spark
+New Tech Academy - Learn Big Data: The Hadoop Ecosystem Masterclass
+Experfy - Learn Hadoop | Hadoop Developer Certification | Hadoop Online | Hadoop Certificate | Hadoop Training Atlanta
+Edx - Introduction to Apache Spark
+Mapr - Free Hadoop On-demand Training Courses
+Sparkhub - Apache Spark Tutorials, Documentation, Courses and Resources all in one place | SparkHub
+Hadoop Sandbox - Hortonworks
+Big Data Books & Reference Materials
+
+Hadoop: The Definitive Guide
+HDFS Architecture Guide - http://archive.cloudera.com/cdh/...
+Welcome to Apache™ Hadoop®!
+Big Data Tutorials
+
+Pig Tutorial
+Learning Spark using Python: Basics and Applications
+Blogs, articles
+
+insideBIGDATA - insideBIGDATA: Clear, Concise Insights on Big Data Strategies
+Running Hadoop On Ubuntu Linux (Single-Node Cluster) - Michael G. Noll, Running Hadoop On Ubuntu Linux (Multi-Node Cluster) - Michael G. Noll
+Handling Data Skew in MapReduce - https://db.in.tum.de/research/pu...
+MapReduce: Simplified Data Processing on Large Clusters - 6th Symposium on Operating Systems Design and Implementation  Technical Paper
+The Google File System - http://static.googleusercontent....
+Under the Hood: Scheduling MapReduce jobs more efficiently with Corona
+100+ Answers
+Chris Schrader
+Chris Schrader, Business Intelligence Consultant
+Answered Apr 9, 2013
+Originally Answered: How do I learn about big data analysis implementation?
+I think the best way to learn anything is to actually do it.  Luckily for us, there's a ton big data technologies and analytic tools which are open source or give you the ability to learn for free through a trial/dev license.  So here is what I would do.
+
+For the sake of providing a somewhat simple answer, I will assume the big data tool you want to use is the Hadoop stack.  And for the sake of not providing an overly simple answer, that you're not looking for an already built industry solution or SaaS provider.  Generally speaking, NoSQL databases aren't really used for analytics (but may be a source).
+
+1) Think about a big data problem you want to solve.
+
+Traditionally, big data has been described by the "3Vs": Volume, Variety, Velocity.  What is a real analytics problem that is best solved using big data tools?  What kind of metrics do you want to capture?  The most common use cases today involve scraping large volumes of log data.  This is because log data tends to be very unstructured, can come from multiple sources, and especially for popular websites, can be huge (terabytes+ a day).  Thus having a framework for performing distributed computing tasks is essential to solve this problem.
+
+2) Download and setup your big data solution
+
+The easiest thing to do is just use a pre-built virtual machine which just about any Hadoop provider makes freely available [1], and then run it locally.  You could also use a service like Amazon Web Services as well.  Most commonly people will use the map-reduce framework and Hive for crunching large volumes of data. Since you're just looking to learn, you wont need terabytes, or even gigabytes of data to play with so getting access to a 100 node cluster won't be a priority.  Although there are certainly challenges to overcome and understand once you start to get into multi-node environments.
+
+3) Solve your big data problem
+Once you have your environment set up, get to coding!  There is plenty of documentation and tutorials out there to reference and learn from [2].  And really, just type questions into Google and you'll get a ton of resources.  Read up on the tools and understand how the technology can be applied to solving for your use case.  Think about the kinds of metrics you're looking to capture within your data.  Think about what kind of map-reduce programs you will need to write to capture the data you want to analyze.  Think about how you can leverage something like Hive or Pig to do a lot of the heavy number crunching.  Something that probably wont be apparent in a single node environment but is a real world problem in any distributed environment is understanding data skew and how it affects performance [3].
+
+4) Analytics & Visualization: The sexy side of Big Data & BI
+Now that you've solved your big data problem and have your data in a manageable format, its time to dazzle your boss with some sweet reports.  Most enterprise architectures that leverage Hadoop will still have a SQL Database for storing and reporting data out of Hadoop (you will quickly come to realize that map-reduce has a very long response time, even on small data sets).  Loading data out of Hadoop and into a SQL database is good practice for the real world but for the sake of learning the big data side of it, not necessary.  There's several (free) reporting tools out there that will connect to Hadoop/Hive directly and will work fine for learning purposes [4].  If you want to be the cool kid on the block (and super employable at large companies), I would pick up Tableau (product) [5].  You could also lend yourself into picking up some predictive modeling and machine learning skills with some of the tools that are out there [6], and maybe start calling yourself a data scientist!
+
+[1]
+Cloudera Support
+Hortonworks Sandbox
+Download (MapR)
+
+[2]
+Welcome to Apache™ Hadoop®!
+Welcome to Hive!
+Hadoop Tutorial
+Hadoop Tutorial - YDN
+http://pig.apache.org/docs/r0.7....
+
+[3]
+http://www-db.in.tum.de/research...
+
+[4]
+Pentaho Products
+Jaspersoft :: Jaspersoft Business Intelligence Software
+http://www.splunk.com/
+
+[5]
+Tableau Software
+
+[6]
+The R Project for Statistical Computing
+http://www.sas.com/
+Scalable machine learning and data mining
+Help us improve Quora:
+Is this answer up to date?
+YesNo
+118.1k Views · 357 Upvotes · Answer requested by Daniel H Kim
+Promoted by QuantInsti
+Become a successful algo & quant trader in 6 months.
+Acquire the knowledge, tools & techniques used by traders in the real world.
+Start now at quantinsti.com
+Related QuestionsMore Answers Below
+
+Which is the best place to start learning big data?
+Who can learn big data?
+What are the best books to learn Big Data?
+How can I learn big data alone?
+Should I learn big data?
+Joydip Datta
+Joydip Datta, Big Data Engineer at Stealth mode startup
+Updated Nov 26, 2013
+Originally Answered: How do I learn about big data?
+To know about Big Data Infrastructure and Technology I would suggest start by reading these two papers. Please do not skip reading these papers.
+
+1. MapReduce: Simplified Data Processing on Large Clusters https://www.usenix.org/legacy/pu...
+
+2. The Google File System: http://static.googleusercontent....
+
+Hadoop map-reduce is modeled after Google Map-reduce (paper 1 above) and Hadoop Distributed File System (HDFS) is modeled after Google File System (paper 2 above). So, after reading these two papers you should understand overall mechanism behind Hadoop.
+
+After you have finished this start studying Hadoop in general using http://hadoop.apache.org/ and their docs section: http://hadoop.apache.org/docs/cu.... 
+
+If you want to know more about HDFS architechture read:http://archive.cloudera.com/cdh/...
+
+Next, it is time for some Hands-On. 
+
+Go to Running Hadoop On Ubuntu Linux (Single-Node Cluster) - Michael G. Noll to set-up a single node Hadoop cluster and run the example word-count job and verify the output.
+
+Then go to Running Hadoop On Ubuntu Linux (Multi-Node Cluster) - Michael G. Noll to setup a multi node cluster and run the example wordcount job.
+
+Then see the word-count source code at WordCount - Hadoop Wiki and try to understand it.
+
+Now you should be confident about the overall working of Hadoop and the driving forces in Big-Data. Now you have to choose in which sub-field you want to work on? Big-Data analytic (writing Map-reduce jobs and pig/hive codes plus some machine learning) or Big-Data infrastructure (Hadoop File System, Map-reduce infrastructure etc.). Based on that you can continue exploring this area. 
+
+Edit: Adding a section for the front-end engineers
+If you are more of an front-end guy, I would suggest studying MongoDBand Hive. Then read a bit about HBase. For hands on, set up a MongoDB or Hive server, load a reasonably big dataset (~500 GB or so) and then write a front end. See if it is responsive enough. You may want to read on AVRO as well (http://avro.apache.org/). Avro is most commonly used data interchange system between front-end and the back-end big data store such as HBASE.
+
+Although Hadoop is traditionally used for back-end batch processing (clean up, filtering, analytics etc.) this is going to change soon. People have already started using it as their primary data store as well (replacing RDBMS engines like MySQL). There is also lots of literature on real time big data processing and alternatives to Hadoop. 
+
+Best of luck!
+Help us improve Quora:
+Is this answer up to date?
+YesNo
+26.7k Views · 76 Upvotes
+Rahul Agarwal
+Rahul Agarwal, Works on Big Data
+Updated Nov 27, 2015 · Upvoted by Jalem Raj Rohit, Sr. Data Scientist at Episource
+Big Data is a growing field and you probably have a lot to learn if you  want to learn about it.I will try to provide the path I took:
+
+1. Start by Learning a Programming Language:
+
+If  you want to tackle Big data you should  know Python/Java. If you don't  know both of these start with Python. Just start with the basics- For  loop, Lists, Dictionaries, Iterating through a list and dictionary etc. I  would advice taking this course on edX: Introduction to Computer Science and Programming Using Python
+In the rest of this post I will assume that you went by my suggestion and are using Python.
+
+
+
+Image Credits: xkcd
+
+2. Learn about a Big Data Platform:
+
+Once  you feel that you could solve basic problems using Python/Java, you are  ready for the next step. You need to learn about some Big Data  Technology like Hadoop/Spark. Now you could start with Spark also but I  feel that Hadoop would be the best place to start as it can provide you  with more background of the Mapreduce Paradigm, and you will be able to  understand the problems that introduction of Spark solves.  
+To learn Hadoop I would advice you to checkout this course on Udacity:
+https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617
+
+Once  you are done through this course you would have gained quite a basic  understanding of concepts and you would have installed a Hadoop VM in  your own machine. You would also have solved the Basic Wordcount  Problem. 
+
+Read this amazing Blog Post from Michael Noll: Writing An Hadoop MapReduce Program In Python - Michael G. Noll.  Just read the basic mapreduce codes. Don't use Iterators and Generators  yet. This has been a starting point for many of us Hadoop developers.
+
+Now try to solve these two problems from the CS109 Harvard course from 2013:
+
+A. First, grab the file word_list.txt from Page on github.com.  This contains a list of six-letter words. To keep things simple, all of  the words consist of lower-case letters only.Write a mapreduce job that  finds all anagrams in word_list.txt.
+
+B. For the next problem, download the file baseball_friends.csv. Each row of this csv file contains the following:
+A person's name
+The team that person is rooting for -- either "Cardinals" or "Red Sox"
+A list of that person's friends, which could have arbitrary length
+
+For  example: The first line tells us that Aaden is a Red Sox friend and he  has 65  friends, who are all listed here. For this problem, it's safe to  assume  that all of the names are unique and that the friendship  structure is  symmetric (i.e. if Alannah shows up in Aaden's friends list, then Aaden will show up in Alannah's friends list).
+Write  an mr job that lists each person's name, their favorite  team, the  number of Red Sox fans they are friends with, and the number  of  Cardinals fans they are friends with.
+
+Try  to do this yourself. Don't use the mrjob (pronounced Mr. Job) way that  they use in the CS109 class. Use the proper Hadoop Streaming way as  taught in the Udacity class as it is much more customizable in the long  run. If you face problems I could guide you. Ping me up.
+
+If you are done with these, you can safely call yourself as someone who could "think in Mapreduce" as how people like to call it.Try to do groupby, filter and joins using Hadoop. You can read up some good tricks from my blog:
+Hadoop Mapreduce Streaming Tricks and Techniques
+
+And don't forget about the Hadoop Streaming API. Read it!!!!!
+
+3. Learn a Little Bit of Bash Scripting:
+
+In the meantime while you are learning Hadoop and in the process of getting your hands dirty with coding, try to read up on shell scripting. 
+It allows you to do simple data related tasks in the terminal itself.
+Read these tutorials for doing that:
+
+Shell Basics every Data Scientist Should know -Part I
+Shell Basics every Data Scientist Should know - Part II(AWK)
+
+I use shell commands because they are fast and I don't need to write a script for each and everything.
+
+4. Learn Spark:
+
+
+
+Now  comes the next part of your learning process. This should be undertaken  after a 
+little bit of experience with Hadoop. Spark Will provide you  with the speed and tools that Hadoop couldn't. But you need to know  Scala/Python to use it. That is one of the reason I suggested that you  go with Python if you don't know any of Java/Python. 
+
+Now  Spark is used for data preparation as well as Machine learning  purposes. I would encourage you to take a look at these two courses on  edX provided by Berkeley instructors. The second course would get you  started a little bit in Machine learning too.
+
+1. Introduction to Big Data with Apache Spark
+2. Scalable Machine Learning
+
+I have written a little bit about Basic data processing with spark here: 
+Learning Spark using Python: Basics and Applications
+
+If  you don't go through the courses, try solving the same two problems  above that you solved by Hadoop using Spark too. Otherwise the problem  sets in the two courses are more than enough.
+
+And sorry for all the shameless plugs, but I do feel they add value, so I added them.
+
+Hope this Helps. Now get working!!!
+41.5k Views · 433 Upvotes
+Albert Wang
+Albert Wang, Co-founder, Perssist
+Answered Jul 4, 2013
+Originally Answered: How do I learn about big data?
+Here's what I did to get up to speed quickly on the industry, and make sense of the differences between XX and YY:
+
+5 minutes: the Wikipedia article is an easily digestible overview: http://en.wikipedia.org/wiki/Big...
+
+McKinsey Big Data Report: Big data: The next frontier for innovation, competition, and productivity
+
+Economist Intelligent Unit Report: http://www.sas.com/resources/ass...
+
+ZDNet Australia has a summary of the above reports from 2012: http://www.zdnet.com/big-data-al...
+
+Dave Feinleib has an overview of the different companies and players http://www.forbes.com/sites/dave...
+
+Those above reports are more "business-ey" and cover the important sectors impacted, potential use cases, etc. Being published in 2011 as 2012, they aren't up-to-date on the most recent trends.
+
+The following resources are updated more frequently:
+Curt Monash's blog - focuses on business intelligence and infrastructure - http://www.dbms2.com/
+19.3k Views · 11 Upvotes
+Pathan Karimkhan
+Pathan Karimkhan, Data science excites me!
+Updated Sep 29, 2014
+Originally Answered: What are some good sources to learn big data?
+Bigdata is like combination of bunch of subjects. Mainly require programming, analysis, nlp, MLP, mathematics. 
+
+Here are bunch of courses I came accross:
+
+Introduction to CS Course
+Notes: Introduction to Computer Science Course that provides instructions on coding.
+Online Resources:
+Udacity - intro to CS course,
+Coursera - Computer Science 101
+
+Code in at least one object oriented programming language: C++, Java, or Python
+Beginner Online Resources:
+Coursera - Learn to Program: The Fundamentals,
+MIT Intro to Programming in Java,
+Google's Python Class,
+Coursera - Introduction to Python,
+Python Open Source E-Book
+
+Intermediate Online Resources:
+Udacity's Design of Computer Programs,
+Coursera - Learn to Program: Crafting Quality Code,
+Coursera - Programming Languages,
+Brown University - Introduction to Programming Languages
+
+Learn other Programming Languages
+Notes: Add to your repertoire - Java Script, CSS, HTML, Ruby, PHP, C, Perl, Shell. Lisp, Scheme.
+Online Resources: w3school.com - HTML Tutorial, Learn to code
+
+Test Your Code
+Notes: Learn how to catch bugs, create tests, and break your software
+Online Resources: Udacity - Software Testing Methods, Udacity - Software Debugging
+
+Develop logical reasoning and knowledge of discrete math
+Online Resources:
+MIT Mathematics for Computer Science,
+Coursera - Introduction to Logic,
+Coursera - Linear and Discrete Optimization,
+Coursera - Probabilistic Graphical Models,
+Coursera - Game Theory.
+
+Develop strong understanding of Algorithms and Data Structures
+Notes: Learn about fundamental data types (stack, queues, and bags), sorting algorithms (quicksort, mergesort, heapsort), and data structures (binary search trees, red-black trees, hash tables), Big O.
+Online Resources:
+MIT Introduction to Algorithms,
+Coursera - Introduction to Algorithms Part 1 & Part 2,
+Wikipedia - List of Algorithms,
+Wikipedia - List of Data Structures,
+Book: The Algorithm Design Manual
+
+Develop a strong knowledge of operating systems
+Online Resources: UC Berkeley Computer Science 162
+
+Learn Artificial Intelligence Online Resources:
+Stanford University - Introduction to Robotics, Natural Language Processing, Machine Learning
+
+Learn how to build compilers
+Online Resources: Coursera - Compilers
+
+Learn cryptography
+Online Resources: Coursera - Cryptography, Udacity - Applied Cryptography
+
+Learn Parallel Programming
+Online Resources: Coursera - Heterogeneous Parallel Programming
+
+Tools and technologies for Bigdata:
+
+Apache spark - Apache Spark is an open-source data analytics cluster computing framework originally developed in the AMPLab at UC Berkeley.[1] Spark fits into the Hadoop open-source community, building on top of the Hadoop Distributed File System (HDFS).[2] However, Spark is not tied to the two-stage MapReduce paradigm, and promises performance up to 100 times faster than Hadoop MapReduce for certain applications.
+ 
+Database pipelining - 
+
+                      As you will notice it's just not about processing the data, but involves a lot of other components. Collection, storage, exploration, ML and visualization are critical to the proect's success.
+ 
+ 
+SOLR -  Solr to build a highly scalable data analytics engine to enable customers to engage in lightning fast, real-time knowledge discovery. 
+        Solr (pronounced "solar") is an open source enterprise search platform from the Apache Lucene project. Its major features include full-text search, hit highlighting, faceted search, dynamic clustering, database integration, and rich document (e.g., Word, PDF) handling. Providing distributed search and index replication, Solr is highly scalable.[1] Solr is the most popular enterprise search engine.[2] Solr 4 adds NoSQL features
+ 
+S3 - Amazon S3 is an online file storage web service offered by Amazon Web Services. Amazon S3 provides storage through web services interfaces. Wikipedia
+ 
+Hadoop - Apache Hadoop is an open-source software framework for storage and large-scale processing of data-sets on clusters ofcommodity hardware. Hadoop is an Apache top-level project being built and used by a global community of contributors and users. It is licensed under the Apache License 2.0.  Apache Hadoop 
+
+MapReduce : Hadoop MapReduce is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) in-parallel on large clusters (thousands of nodes) of commodity hardware in a reliable, fault-tolerant manner.
+
+
+
+
+A MapReduce job usually splits the input data-set into independent chunks which are processed by the map tasks in a completely parallel manner. The framework sorts the outputs of the maps, which are then input to the reduce tasks. Typically both the input and the output of the job are stored in a file-system. The framework takes care of scheduling tasks, monitoring them and re-executes the failed tasks.
+
+Corona : 
+
+Corona, a new scheduling framework that separates cluster resource management from job coordination.[1] Corona introduces a cluster managerwhose only purpose is to track the nodes in the cluster and the amount of free resources. A dedicated job tracker is created for each job, and can run either in the same process as the client (for small jobs) or as a separate process in the cluster (for large jobs). 
+
+
+
+One major difference from our previous Hadoop MapReduce implementation is that Corona uses push-based, rather than pull-based, scheduling. After the cluster manager receives resource requests from the job tracker, it pushes the resource grants back to the job tracker. Also, once the job tracker gets resource grants, it creates tasks and then pushes these tasks to the task trackers for running. There is no periodic heartbeat involved in this scheduling, so the scheduling latency is minimized. Ref : Under the Hood: Scheduling MapReduce jobs more efficiently with Corona 
+
+
+HBase : HBase is an open source, non-relational, distributed database modeled after Google's BigTable and written in Java. It is developed as part of Apache Software Foundation's Apache Hadoop project and runs on top of HDFS (Hadoop Distributed Filesystem), providing BigTable-like capabilities for Hadoop. That is, it provides a fault-tolerant way of storing large quantities ofsparse data (small amounts of information caught within a large collection of empty or unimportant data, such as finding the 50 largest items in a group of 2 billion records, or finding the non-zero items representing less than 0.1% of a huge collection).
+
+Zookeeper - Apache ZooKeeper is a software project of the Apache Software Foundation, providing an open source distributed configuration service, synchronization service, and naming registry for large distributed systems.[clarification needed] ZooKeeper was a sub project of Hadoop but is now a top-level project in its own right.
+
+Hive - Apache Hive is a data warehouse infrastructure built on top of Hadoop for providing data summarization, query, and analysis. While initially developed by Facebook, Apache Hive is now used and developed by other companies such asNetflix. Amazon maintains a software fork of Apache Hive that is included in Amazon Elastic MapReduce on Amazon Web Services.
+
+Mahout - Apache Mahout is a project of the Apache Software Foundation to produce free implementations of distributed or otherwisescalable machine learning algorithms focused primarily in the areas of collaborative filtering, clustering and classification. Many of the implementations use the Apache Hadoop platform. Mahout also provides Java libraries for common maths operations (focused on linear algebra and statistics) and primitive Java collections. Mahout is a work in progress; the number of implemented algorithms has grown quickly,[3] but various algorithms are still missing.
+
+Lucene is a bunch of search-related and NLP tools but it's core feature is being a search index and retrieval system. It takes data from a store like HBase and indexes it for fast retrieval from a search query. Solr uses Lucene under the hood to provide a convenient REST API for indexing and searching data. ElasticSearch is similar to Solr.
+
+Sqoop is a command-line interface to back SQL data to a distributed warehouse. It's what you might use to snapshot and copy your database tables to a Hive warehouse every night.
+
+Hue is a web-based GUI to a subset of the above tools. Hue aggregates the most common Apache Hadoop components into a single interface and targets the user experience. Its main goal is to have the users "just use" Hadoop without worrying about the underlying complexity or using a command line
+
+Pregel and it's open source twin Giraph is a way to do graph algorithms on billions of nodes and trillions of edges over a cluster of machines. Notably, the MapReduce model is not well suited to graph processing so Hadoop/MapReduce are avoided in this model, but HDFS/GFS is still used as a data store.
+
+NLTK - The Natural Language Toolkit, or more commonly NLTK, is a suite of libraries and programs for symbolic and statistical natural language processing (NLP) for the Python programming language. NLTK includes graphical demonstrations and sample data. It is accompanied by a book that explains the underlying concepts behind the language processing tasks supported by the toolkit, plus a cookbook.
+
+NLTK is intended to support research and teaching in NLP or closely related areas, including empirical linguistics, cognitive science, artificial intelligence, information retrieval, and machine learning.
+ 
+For Python-
+                      Scikit Learn
+ 
+                      Numpy
+ 
+                      Scipy
+ 
+Freebase - Freebase is a large collaborative knowledge base consisting of metadata composed mainly by its community members. It is an online collection of structured data harvested from many sources, including individual 'wiki' contributions.
+
+DBPedia : DBpedia (from "DB" for "database") is a project aiming to extract structured content from the information created as part of theWikipedia project. This structured information is then made available on the World Wide Web. DBpedia allows users to query relationships and properties associated with Wikipedia resources, including links to other related datasets. DBpedia has been described by Tim Berners-Lee as one of the more famous parts of the decentralized Linked Data effort.
+ 
+Visualization tool 
+                      ggplot in R
+                      Tableu
+                      Qlikview
+                      
+Mathematics : )
+ 
+                      Calculus, Statistic, Probability, linear algebra and coordinate geometry
+ 
+NER- Named Entity Recognition (NER) labels sequences of words in a text which are the names of things, such as person and company names, or gene and protein names. 
+
+Faceted search : Faceted search also called faceted navigation or faceted browsing, is a technique for accessing information organized according to a faceted classification system, allowing users to explore a collection of information by applying multiple filters. A faceted classification system classifies each information element along multiple explicit dimensions, called facets, enabling the classifications to be accessed and ordered in multiple ways rather than in a single, pre-determined, taxonomic order
+
+Source : Wikipedia, the free encyclopedia
+
+
+Make this source richer here:  karimkhanp/bigdata_resource
+22.4k Views · 155 Upvotes
+Akash Dugam
+Akash Dugam, Data Scientist.
+Answered Feb 3, 2016
+I've already given answer to such kind of questions earlier and I'd like to add some points here as well.
+
+First I'd like to insist you people to go through following question to understand the future of "Big Data Technology"
+
+Akash Dugam's answer to Will data scientist salaries increase in the next decade?
+
+Now let's talk about, how'd you gonna achieve it. :)
+
+
+Nowadays "Big Data" got big boom in IT sectors worldwide. As we all aware of about analytic's jobs that pays a lot. Huge amount of data we generate day by day that to be managed for this purpose BIG DATA comes into the picture.
+
+Since there is description attached with this question so couldn't get more details about your knowledge or which field you are from? what job you do? these question matters a lot. I'll consider you as fresher and try to give answers to your question.
+
+Big data is not a subject or language so you can learn by studying it. Actually It's combination of bunch of subjects,technologies etc.
+
+Let's consider this equation,
+
+Big Data = Programming skills +Data Structure & Algorithms+ Analytical skills + Database Skills + Mathematics + Machine Learning + NLP+OS+Cryptography + Parallel Programming.
+
+Yes! I'm not kidding here, you really need to have knowledge of these subjects.
+
+But don't worry, you can prepare it from scratch. There are huge resources available on internet that will help you out to master of all the skills.
+
+1] Before you get started:
+
+I've come across the beautiful introductory course of Stanford university. If you totally newbie to Computer Science field then please complete CS101 course.
+
+Here is the link to register for CS101:
+
+Computer Science 101
+
+2] Programming Skills:
+
+As I mentioned above, programming skills are mandatory to start with Big Data. You need to learn following programming languages.
+
+Learn Python:
+Python is considered easiest programming language of the world because of It's simple syntax. You can learn python quickly.
+
+Learn Python here: Python Tutorials: Season 1 (You don't need to be Python Ninja just basic information is needed).
+
+Learn Java:
+If you are looking for "Big Data Developer Job" then I'd suggest you to learn Java. Hadoop is written in Java, thus knowledge of Java basics is essential to learn Hadoop.
+
+Here is Best resources available on internet to prepare JAVA: Java Developer Tutorials and Online Training
+
+MIT is also providing open source course on Java, Here is the link: Introduction to Programming in Java
+
+[Note: Any OOP language is mandatory to learn Big Data]
+
+3] Data Structure & Algorithms:
+
+Yes! You should have the DS & Algorithm skills. You can take MIT course to masters them: Introduction to Algorithms
+
+Learn about fundamental data types (stack, queues, and bags), sorting algorithms (quicksort, mergesort, heapsort), and data structures (binary search trees, red-black trees, hash tables), Big O.
+
+4] Analytical Skills:
+
+Analytical thinking will make you PRO in Big Data. I suggest you to try to solve puzzles from internet or start playing the chess. Doing these things will widen your analytical thinking.
+
+5] Database Skills:
+
+As you are going play with lots of data so my recommendation is to learn SQL. You can learn SQL Here: SQLZOO or from "Manish Sharma's" youtube channel: SQL tutorials for beginners/ Oracle Database tutorials.
+
+6] Mathematics:
+
+If your math background is up to multivariable calculus and linear algebra, you'll have enough background to understand almost all of the probability / statistics / machine learning for the job.
+
+Multivariable Calculus: Here you can learn Multivariable calculus. Please visit this link: Multivariable Calculus
+Numerical Linear Algebra / Computational Linear Algebra / Matrix Algebra:Linear Algebra
+Let's learn Stat and Probability: Probability is also called the science of uncertainty and that concept is most important in the field of DS. You can learn it from MIT courses. Here is the youtube link:youtube.comProbability and Statistics MIT
+Here is another important series by MIT : Mathematics for Computer Science
+7] Machine Learning:
+
+Yet another important subject that everyone should learn is "Machine Learning". You need to have math knowledge to learn ML. Here is the world's best tutorial on ML:Lecture Collection | Machine Learning
+
+8] NLP:
+
+Here are some resources which will help you out in NLP:
+
+Book:
+
+Speech and Language Processing (2nd Edition): Daniel Jurafsky, James H. Martin: 9780131873216: Amazon.com: Books
+
+Web Tutorials:
+
+Artificial Intelligence Natural Language Processing
+
+Here is best reference, Natural Language Processing with Python
+
+9] Operating System:
+
+Develop strong knowledge of OS from following resources.
+
+Online Resources: UC Berkeley Computer Science 162
+
+10] Cryptography:
+
+Here is the link to masters in cryptography: Cryptography Tutorial
+
+11] Parallel Programming:
+
+Parallel and Concurrent Programming in Haskell: Techniques for Multicore and Multithreaded Programming by Simon Marlow is a fantastic book.
+
+The Last Step:
+
+Above 11 step procedure is really important if you want make great career in Big Data technologies. After the completion of above step, I'd like to insist you to visit following link and start learning about Big Data:
+
+Big Data University | Data Science Courses
+
+
+**** Project Work ****
+
+Here’s another way to capture what a Big Data project could mean for your company or project: study how others have applied the idea.
+
+Here are some real-world examples of Big Data in action:
+
+Consumer product companies and retail organizations are monitoring social media like Facebook and Twitter to get an unprecedented view into customer behavior, preferences, and product perception.
+Manufacturers are monitoring minute vibration data from their equipment, which changes slightly as it wears down, to predict the optimal time to replace or maintain. Replacing it too soon wastes money; replacing it too late triggers an expensive work stoppage
+Manufacturers are also monitoring social networks, but with a different goal than marketers: They are using it to detect aftermarket support issues before a warranty failure becomes publicly detrimental.
+The government is making data public at both the national, state, and city level for users to develop new applications that can generate public good.Learn how government agencies significantly reduce the barrier to implementing open data with NuCivic Data
+Financial Services organizations are using data mined from customer interactions to slice and dice their users into finely tuned segments. This enables these financial institutions to create increasingly relevant and sophisticated offers.
+Advertising and marketing agencies are tracking social media to understand responsiveness to campaigns, promotions, and other advertising mediums.
+Insurance companies are using Big Data analysis to see which home insurance applications can be immediately processed, and which ones need a validating in-person visit from an agent.
+By embracing social media, retail organizations are engaging brand advocates, changing the perception of brand antagonists, and even enabling enthusiastic customers to sell their products.
+Hospitals are analyzing medical data and patient records to predict those patients that are likely to seek readmission within a few months of discharge. The hospital can then intervene in hopes of preventing another costly hospital stay.
+Web-based businesses are developing information products that combine data gathered from customers to offer more appealing recommendations and more successful coupon programs.
+Sports teams are using data for tracking ticket sales and even for tracking team strategies.
+Tip: By following all the 11 steps and implementing one of the mentioned projects and putting in your resume means a lot for recruiter.
+
+Note for Java Developer: Java developer can skip the steps related to learning Java as they are already working in the same field.
+
+Big Big Luck For Your Big Data Career.
+
+[Note: If you need any help please feel free to drop me a message.]
+
+References:
+
+Akash Dugam's answer to Where should I start from for learning big data development?
+
+Akash Dugam's answer to What is the difference between data analyst and business analyst?
+
+Akash Dugam's answer to Is there any website where we can learn Data Science for free?
+
+Akash Dugam's answer to What makes Python so fast for big scale data analysis compared to R or SAS?
+
+Akash Dugam's answer to What are the skills needed to become big data tester ?
+
+Akash Dugam's answer to Is it useful for a data scientist to know about operating systems?
+11.5k Views · 105 Upvotes
+Michael Hausenblas
+Michael Hausenblas, Big Data geek and advocate.
+Answered Dec 21, 2013
+Originally Answered: What are some introductory-level articles to understand Big Data?
+What Charan said. And also: Planning for Big Data, another excellent (free) O'Reilly book.
+3.2k Views · 4 Upvotes · Answer requested by Varun Upadhyay
+Serene Lee
+Serene Lee, Business Intelligence Manager at Google
+Answered Feb 24, 2012
+Originally Answered: How do I learn about big data?
+If you are located in the Bay Area, there are lots of conferences, networking events and panel discussions that you can use to learn from other key experts in this field.
+
+An example is:
+
+https://www.svforum.org/index.cf...
+
+Conference Summary:
+The amount of data in our world has already boomed past multiple zettabytes per IDC stats, presenting major challenges and opportunities for competition, growth and innovation. Businesses and the public sector increasingly must analyze very large data sets, support real-time and “right-time” operational processes, and decipher complex data from mobile networks, social media and machine data, all while protecting privacy. We’re witnessing a wealth of innovation in technologies to store, manage and drive business benefits from Big Data, from Hadoop, graph databases, “NoSQL” or “Not-just-SQL” to compute clouds, business intelligence software as a service (SaaS), exciting tools for data visualization and team collaboration, and much more. What domains are affected the most by Big Data? Where are the top business opportunities? Come listen to and meet experts in the field.
+
+There are also a bunch of free Kindle e-books on Big Data, such as:
+
+http://www.amazon.com/Big-Data-N...
+
+http://www.amazon.com/Big-data-c...
+
+http://www.amazon.com/Data-Scien...
+33.3k Views · 28 Upvotes
+Anbu Cheeralan
+Anbu Cheeralan, Data Curious...
+Answered Mar 7, 2015
+Originally Answered: How do I learn about big data?
+There are some great answers here.
+Depending on your background, you can go from usecases to technology or technology to usecases.
+
+If you want to go from technology to usecases read on.
+Start with one like Hadoop and slowly you will get to know how this fits in Big Data eco system.
+
+Here are the steps i would suggest to get started with Hadoop.
+ 
+Hadoop Training/Self Learning  options:
+Hadoop Eco System is growing day by day with lot of new technologies/stacks added.
+Learning Hadoop is still the first step in that process.
+ 
+If you want to play around, have a spare laptop with 4-8 GB RAM and 500 GB - 1 TB hard disk, you are good to go with running them in a virtual machine like virtual box or vmware.
+ 
+1. Cloudera has an online option which may require to sign-in for a trial account. You may not even need a spare laptop :)
+http://www.cloudera.com/content/....
+ 
+2. HortonWorks Sandbox is another easier option. But you may need to install it in a VM.
+http://hortonworks.com/products/...
+ 
+3.  MapR has recently started free ondemand courses thru their academy.
+https://www.mapr.com/services/ma...
+ 
+4. IBM has pretty good tutorials focusing on their product (IBM Big Insights)
+http://bigdatauniversity.com/
+ 
+5. Pivotal has also started providing tutorials on these:
+http://pivotalhd.docs.pivotal.io...
+ 
+I would recommend #1 Cloudera or #2 Hortonworks for the sandbox.
+If you want to understand the ecosytem first i would recommend #3 and #4.
+ 
+Where we can go for MOOC:
+ 
+In addition to the above Udacity, Coursera, edx has lot of courses on data science, machine learning, hadoop.
+ 
+https://www.coursera.org/
+https://www.udacity.com/
+8.2k Views · 8 Upvotes · Answer requested by Nirbhay Kekre
+Jyotsna Khan
+Jyotsna Khan, studied at Thadomal Shahani Engineering College
+Answered Jan 25
+Experfy is a Harvard based data science consulting and training marketplace. Here is a course on Big Data Analyst taught by Sumit Pal (Former director for Big Data Architecture at Verizon and author of SQL on Big Data - This Big Data training gives one the background necessary to start doing analyst work on Big Data. It covers - areas like Big Data basics, Hadoop basics and tools like Hive and Pig - which allows one to load large data sets on Hadoop and start playing around with SQL Like queries over it using Hive and do analysis and Data Wrangling work with Pig. The Big Data online course also teaches Machine Learning Basics and Data Science using R and also covers Mahout briefly - a Recommendation, Clustering Engine on Large data sets. The course includes hands-on exercises with Hadoop, Hive , Pig and R with some examples of using R to do Machine Learning and Data Science work
+
+There is also a course on Hadoop Developer Training
+
+Learn the fundamentals of how to produce industrial strength applications using the Hadoop ecosystem. In addition to the basics we introduce advanced topics such as intelligent hashing, partition skew detection, Monte Carlo simulation, partition pruning, and push predicates. Emerging industry standards in data formats, messaging, and stream processing provide guidance to students on future studies.
+1.8k Views · 19 Upvotes
+Alex K. Chen
+Alex K. Chen, multithreaded messenger. Seeks timeless context-independence
+Updated Aug 23, 2011 · Upvoted by Bradley Voytek, Former Data Scientist, Uber Inc.
+Originally Answered: How do I learn about big data?
+McKinsey Get Ready For Sensor-Driven Business Models: http://www.readwriteweb.com/arch...
+ReadWriteWeb - the Coming Data Explosion: http://www.nytimes.com/external/...
+For Today's Graduate - One Word - Statistics: http://www.nytimes.com/2009/08/0...
+Fill in the Blanks: Using Math to Turn Lo-Res Datasets Into Hi-Res Samples - http://www.wired.com/magazine/20...
+When Astronomy Met Computer Science - http://discovermagazine.com/2011...
+Wired.com - Quantified Self - http://www.wired.com/medtech/hea...
+
+Science Magazine also has an entire (free-for-everyone) section on big data (published in February 2011): http://www.sciencemag.org/site/s.... I'll quote the article titles in [1]
+
+There are also a lot of excellent articles off the Communications of the ACM, but they're (unfortunately) paywalled. You might find a way to get them though
+
+Embedded networked sensing, having successfully shifted from the lab to the environment, is primed for a more contentious move to the city to where citizens will likely be the target of data collection - http://cacm.acm.org/magazines/20...
+Computing - The Fourth Great Domain of Science: http://scienceblogs.com/confessi...
+
+[1]
+
+PERSPECTIVES
+Climate Data Challenges in the 21st Century
+J. T. Overpeck et al.
+Challenges and Opportunities of Open Data in Ecology
+O. J. Reichman et al.
+Changing the Equation on Scientific Data Visualization
+P. Fox and J. Hendler
+Challenges and Opportunities in Mining Neuroscience Data
+H. Akil et al.
+The Disappearing Third Dimension
+T. Rowe and L. R. Frank
+Advancing Global Health Research Through Digital Technology and Sharing Data
+T. Lang
+More Is Less: Signal Processing and the Data Deluge
+R. G. Baraniuk
+Ensuring the Data-Rich Future of the Social Sciences
+G. King
+Metaknowledge
+J. A. Evans and J. G. Foster
+Access to Stem Cells and Data: Persons, Property Rights, and Scientific Progress
+D. J. H. Mathews et al.
+On the Future of Genomic Data
+S. D. Kahn
+Rescue of Old Data Offers Lesson for Particle Physics
+A. Curry
+Is There an Astronomer in the House?
+S. Reed
+May the Best Analysis Win
+J. Carpenter
+15.1k Views · 14 Upvotes
+Abdelbarre Chafik
+Abdelbarre Chafik, +3 years in Data
+Answered Aug 6, 2016
+Originally Answered: What is big data? And how can I learn it?
+Very informative video, can gives you a clear idea about Big data
+
+Ref : Funk-e Studios
+
+Free Certification
+
+bigdatauniversity.com from IBM University. You will find a range of free courses with certification
+
+Books , I advise you to start with this one :
+
+Big Data For Dummies (that gives you a great overview of big data)
+then you should to do some hands-on, here I propose to start with Hadoop free open source ecosystem (you can use Hartonworks Platform).
+
+Hadoop For Dummies.
+Hadoop Beginner's Guide..
+Webinars
+
+Also I advise you to assist some webinars in Bright TALK
+
+big data | BrightTALK.
+Hope You find a great support material to start.
+1.6k Views · 4 Upvotes · Answer requested by Muhammed Elsheikh
+Santosh Bakliwal
+Santosh Bakliwal, works at Tata Consultancy Services
+Answered Apr 27
+Big Data is a term for data sets that are large or complex that traditional data processing application software is inadequate to handle them. Every day we create a humongous 2.5 Quintillion Bytes of Data and to add to it 90% of world’s data is generated in the past two years. This data comes from many industries like weather information collected by sensors, huge data patterns from social media sites, images, videos, healthcare reports and many more. This large amount of data is called Big Data.
+
+Hadoop is an open source tool from the Apache Software Foundation. It is designed to efficiently processes large volumes of data. Open source project means it is freely available and even its source code can be changed.
+
+A Comprehensive Guide to Hadoop
+
+Online Big Data Hadoop Quiz
+
+Big Data Flashcards
+
+Careers and Job Roles in Big Data
+
+Big Data Applications in Various Domains
+
+Hadoop Architecture
+
+
+Hadoop works in master – slave fashion. There is a master node and there are n numbers of slave nodes where n can be 1000s. Master manages, maintains and monitors the slaves while slaves are the actual worker nodes. Master should be deployed on good configuration hardware and not just any commodity hardware as it is the centerpiece of Hadoop cluster.
+
+Master just stores the meta-data (data about data) while slaves are the nodes which store the data. Data is stored distributedly in the cluster. The client connects with master node to perform any task.
+
+Best Books to Learn Big Data & Hadoop
+
+Industry Oriented Big Data Certification
+
+Hadoop ecosystem components
+
+a. Hadoop Distributed File System
+
+HDFS is the primary storage system of Hadoop. Hadoop distributed file system (HDFS) is java based file system that provides scalable, fault tolerance, reliable and cost efficient data storage for big data. HDFS is a distributed filesystem that runs on commodity hardware. HDFS is already configured with default configuration for many installations. Most of the time for large clusters configuration is needed. Hadoop interact directly with HDFS by shell-like commands.
+
+
+Components of HDFS:
+
+i. NameNode
+
+It is also known as Master node. NameNode does not store actual data or dataset. NameNode stores Metadata i.e. number of blocks, their location, on which Rack, which Datanode the data is stored and other details. It consists of files and directories.
+
+Tasks of NameNode
+
+Manage file system namespace.
+Regulates client’s access to files.
+Executes file system execution such as naming, closing, opening files and directories.
+Read the complete Guide to Hadoop Ecosytem Components and their Roles
+588 Views · 1 Upvote
+Jahangir Mohammed
+Jahangir Mohammed, Head of Engineering.
+Answered Jan 17, 2013
+Originally Answered: How do i start to learn about Big Data and No SQL?
+Respecting DRY(Don't repeat yourself), here are a few of the quora Q&As which deals with the topics you want to learn -
+1. This Q&A points to really good papers and a few links to map-reduce framework Hadoop which is used to process big data on cluster of machines and a NoSQL solution Cassandra.
+What is the best way to learn Hadoop and Cassandra for a starter?
+
+Also, this video is pretty helpful:
+
+
+After you are done watching above video, read all the above papers and some of the prefaces of the books and introductions pointed in the above Q&A, start running simple examples like word count with the vm offered by Cloudera. Internalize the finer details of this simple but yet powerful enough example to explain how a simple problem like wordcount could be distributed. 
+
+Once you are done with this, you can try various examples, writing your custom jobs and so on. Once this phase is done and your understanding of the framework is solid, you can go ahead with learning other tools in this ecosystem and master them.
+
+Then, go ahead and hear to various use cases showcased by various presenters in Hadoop World, HBaseCon, you can do a search for these on youtube.
+
+2. What is the best way to learn how to process and analyze big data?
+
+3. Big Data: How do i learn about big data?
+
+NoSQL:
+Understand CAP theorem. Get rid of a few hard notions you may have learnt in RDBMS. 
+
+Learn one noSQL technology well. Starting to play with mongo(Install MongoDB on OS X) or Cassandra(The Apache Cassandra Project) is pretty easy. Write some queries against them and learn the limitations, but at the same time enjoy the powerful things you can do.
+ 
+Another book for a quick read of various modern noSQL databases and giving you enough information to get started: Seven Databases in Seven Weeks: A Guide to Modern Databases and the NoSQL Movement: Eric Redmond, Jim R. Wilson: 9781934356920: Amazon.com: Books
+
+Then, go ahead, code more using various client APIs to interact with databases.
+
+Hang out on ircs and hear to various use cases.
+
+Hope this helps.
+4.9k Views · 4 Upvotes
+Justin Singer
+Justin Singer, Associate at IA Ventures (we're all about Big Data)
+Updated Oct 22, 2010
+Originally Answered: How do I learn about big data?
+PriceWaterhouseCooper published a Technology Forecast subtitled: Making sense of Big Data that gives a great high-level overview of the uses and trends. Access it here: http://www.pwc.com/us/en/technol...
+The Economist also devoted an entire issue to Big Data earlier this year. The articles are gated, but you can register for a free 14-day trial to get access: http://www.economist.com/node/15...
+McKinsey Quarterly's note on Ten Tech-enabled trends to watch includes a Big Data section: http://www.mckinseyquarterly.com...
+Great article from ACM Queue on The Pathologies of Big Data: http://queue.acm.org/detail.cfm?...
+Bradford Cross - Big Data is less about size, more about freedom: http://techcrunch.com/2010/03/16...
+12.3k Views · 4 Upvotes
+Edward Viaene
+Edward Viaene, Fmr Information Risk VP at JP Morgan; Cofounder and Big Data Expert at in4it.io
+Answered Apr 7, 2016
+I just want to add my answer to the already 100+ answers here, because the upvoted answers are now 1+ year old and the Big Data world is moving fast. So how should you learn Big Data in 2016:
+
+Hadoop is now the most popular technology for Big Data in the enterprise. The focus in 2016 is now on security and integration with the rest of the enterprise.
+Spark is now the most popular computing engine. Companies don't want to write code using Java MapReduce, but want to use the newer and easier Spark API to write code. Scala and Python are 2 very important languages you should master when looking for a job in the Big Data space
+Data Science is the way to get value out of your data. Companies are setting up data science teams that are using Big Data tools to gather insights in the data using statistical models and machine learning. Again Python is very popular, but also R. Popular Data Science tools used are Jupyterhub (IPython notebook), Spark (with Machine Learning Library), Python libraries like scikit-learn, numpy, pandas
+Visualization is still important! Enterprises will want to plug-in their existing visualization tools in Hadoop. Qlikview, Splunk using plugins or BI tools using Hive and a JDBC/ODBC connector
+SQL is still very important in the enterprise! Hive together with JDBC/ODBC is used by data analysts to plug-in to the hadoop cluster and run ad-hoc queries to do data analysis. SQL in spark is also often used. DataFrames on top of RDDs is gaining a lot in popularity
+Realtime processing is high on the strategic plan of enterprises. Typical technologies involved are Kafka for pubsub/queueing, HBase as a database on top of Hadoop, Phoenix on top of HBase for SQL support in HBase, Spark-Streaming/Storm for realtime processing
+Yarn is becoming more important. Scheduling has been improved a lot. CGroups enable limitation of queues by CPU, Pre-emption can help better resource allocation of the cluster, label based scheduling helps with heterogeneous hardware.
+Integration with the enterprise is everything. Authorization and Authentication together with Identity Management needs to be implemented in every enterprise. Technologies used in the Hadoop Apache Stack are Apache Ranger (Authorization), Kerberos+LDAP/AD (Authentication), Knox Gateway (Single Point of Entry), Apache Ambari / Hue as a web UI for HDFS access, Hive Query access. Encryption at rest is now also supported in HDFS using transparant HDFS encryption.
+I also cover these topics in my online "Learn Big Data" Hadoop course. If you're interested, take a look at New Tech Academy.
+4.6k Views · 21 Upvotes
+Alan Morrison
+Alan Morrison, Author of Remapping the Database Landscape/Res Fellow at PricewaterhouseCoopers
+Answered Dec 21, 2013
+Originally Answered: What are some introductory-level articles to understand Big Data?
+We put together Making Sense of Big Data a few years back, which explained a) how Hadoop/MapReduce and NoSQL originated and why b) how companies are using Hadoop clusters (or alternatives) based on their needs, and c) how the technology behind distributed commodity cluster computing works to scale the analysis of petabytes of unstructured data. 
+
+Still a good primer that not only looks at the technologies, but what their business implications are:
+
+Technology Forecast: 2010 Issue 3
+
+9.1k Views · 7 Upvotes · Answer requested by Varun Upadhyay
+Daniel Gutierrez
+Daniel Gutierrez, DataScientist
+Answered Jul 21, 2015
+Originally Answered: How do I start learning big data?
+Please consider reading insideBIGDATA - insideBIGDATA: Clear, Concise Insights on Big Data Strategies on a regular basis. I am Managing Editor and I take much effort in providing content for people like you who want to learn more about Big Data, data science, and machine learning. 
+
+Here is a series I developed "Ask a Data Scientists" (sponsorted by Intel) that has a lot of good information you might find useful. 
+
+You searched for ask a data scientist - insideBIGDATA
+
+Cheers,
+
+Daniel
+4.6k Views · 15 Upvotes
+Tristan Bergh
+Tristan Bergh, Aero engineer, now data scientist
+Answered Nov 19, 2014
+Originally Answered: What are some good sources to learn about big data?
+One of the better Big Data source is the source: The Apache Software Foundation 
+
+I would suggest starting with Hadoop. Read the manuals, do the tutorials. 
+
+For analytics, look at some of the Coursera courses. 
+
+Analytics is about asking questions, building hypotheses, building models to work on the data so you can test your hypotheses and then analysing the results - the scientific method. 
+
+If you have no background in science or maths, perhaps start there. 
+
+Free datasets are mentioned often in the The Apache Software Foundation tutorials, e.g. the AFINN sentiment list in one of the Hadoop tutorials.
+
+google for free data sets - Mr Yu gives great advice.
+2.3k Views · 1 Upvote · Answer requested by Nirbhay Kekre
+Blake Martin
+Blake Martin, +5 Yrs Experience in Big Data Development, Speaker & Blogger
+Answered Feb 2, 2016
+
+Big data analytics is the process of examining large data sets containing a variety of data types -- i.e Big Data -- to uncover hidden patterns, unknown correlations, market trends, customer preferences and other useful business information. The analytical findings can lead to more effective Marketing new revenue opportunities, better customer service, improved operational efficiency, competitive advantages over rival organizations and other business benefits.
+
+Visit This Link-:Big Data Courses on Intellipaat  The primary goal of big data analytics is to help companies make more informed business decisions by enabling DATA Scientist, predictive modelers and other analytics professionals to analyze large volumes of transaction data, as well as other forms of data that may be untapped by conventional business intelligence(BI) programs. That could include Web server logs and Internet Click Stream data, social media content and social network activity reports, text from customer emails and survey responses, mobile-phone call detail records and machine data captured by sensors connected to the INTERNET Things Some people exclusively associate big data with semi-structured and un structed Data of that sort, but consulting firms like Gartner Inc. and Forrester Research Inc. also consider transactions and other structured data to be valid components of big data analytics applications.
+
+Big data can be analyzed with the software tools commonly used as part of Advance Analytics disciplines such as Predective Analysis Data Mining, Text Analytics and Statical Method. Mainstream BI software and Visualization tools can also play a role in the analysis process. But the semi-structured and unstructured data may not fit well in traditional Data Warehouse based on Relational Database. Furthermore, data warehouses may not be able to handle the processing demands posed by sets of big data that need to be updated frequently or even continually -- for example, real-time data on the performance of mobile applications or of oil and gas pipelines. As a result, many organizations looking to collect, process and analyze big data have turned to a newer class of technologies that includes Hadoop and related tools such as Yarn Spook, Spark, and Pig as well as No Sql databases. Those technologies form the core of an open source software framework that supports the processing of large and diverse data sets across clustered systems.
+
+In some cases,  Hadoop Cluster and No SQL systems are being used as landing pads and staging areas for data before it gets loaded into a data warehouse for analysis, often in a summarized form that is more conducive to relational structures. Increasingly though, big data vendors are pushing the concept of a Hadoop Data Take that serves as the central repository for an organization's incoming streams of Raw Data. In such architectures, subsets of the data can then be filtered for analysis in data warehouses and Analytics Databases, or it can be analyzed directly in Hadoop using batch query tools, stream processing software and Sql AND Hdoop technologies that run interactive, ad hoc queries written in Sql Potential pitfalls that can trip up organizations on big data analytics initiatives include a lack of internal analytics skills and the high cost of hiring experienced analytics professionals. The amount of information that's typically involved, and its variety, can also cause data management headaches, including Data Quality and consistency issues. In addition, integrating Hadoop systems and data warehouses can be a challenge, although various vendors now offer software connectors between Hadoop and relational databases, as well as other data integration tools with big data capabilities.
+
+Businesses are using the power of insights provided by big data to instantaneously establish who did what, when and where. The biggest value created by these timely, meaningful insights from large data sets is often the effective enterprise decision-making that the insights enable.
+
+Extrapolating valuable insights from very large amounts of structured and unstructured data from disparate sources in different formats require the proper structure and the proper tools. To obtain the maximum business impact, this process also requires a precise combination of people, process and analytic tools. Some of the potential business benefits from implementing an effective big data insights methodology include:
+
+Timely insights from the vast amounts of data. This includes those already stored in company databases, from external third-party sources, the Internet, social media and remote sensors.
+Real-time monitoring and forecasting of events that impact either business performance or operation
+Ability to find, acquire, extract, manipulate, analyze, connect and visualize data with the tools of choice (SAP HANA, SAP Sybase®, SAP Intelligence Analysis for Public Sector application by Palantir, Kapow®, Hadoop).
+Convergence of the BDI solution for variety with the speed of SAP HANA for velocity
+The capability of Hadoop for volumes to manage vast amounts of data, in or out of the Cloud, with validation and verification.
+Identifying significant information that can improve decision quality
+Mitigating risk by optimizing the complex decisions of unplanned events more rapidly
+Addresses speed and scalability, mobility and security, flexibility and stability
+Integration of both structured and unstructured data
+The realization time to information is critical to extract value from various data sources including mobile devices, radio-frequency identification (RFID), the Web and a growing list of automated sensory technologies
+SAP HANA provides the extremely accelerated business warehouse/enterprise data warehouse (BW/EDW).
+Hadoop provides reliable data storage and high-performance parallel data processing – the ability to store extremely large data sets.
+Cloud is extensible, flexible, scalable, elastic, self-healing, on-demand, etc. and provides the inexpensive hardware/software platform with all applications (such as Kapow, SAP Intelligence Analysis for Public Sector application by Palantir, CRM, SAP Sybase IQ, SAP Data Services with text analytics) for rapid ramp-up at lower capital cost requirements.
+Hadoop is an open-source framework that allows to store and process big data in a distributed environment across clusters of computers using simple programming models. It is designed to scale up from single servers to thousands of machines, each offering local computation and storage.
+
+This brief tutorial provides a quick introduction to Big Data, Map Reduce algorithm, and Hadoop Distributed File System.
+
+Hadoop is an Apache open source framework written in java that allows distributed processing of large datasets across clusters of computers using simple programming models. A Hadoop frame-worked application works in an environment that provides distributed storage and computation across clusters of computers. Hadoop is designed to scale up from single server to thousands of machines, each offering local computation and storage.
+
+Hadoop Common: These are Java libraries and utilities required by other Hadoop modules. These libraries provides filesystem and OS level abstractions and contains the necessary Java files and scripts required to start Hadoop.
+Hadoop YARN: This is a framework for job scheduling and cluster resource management.
+Hadoop Distributed File System (HDFS™): A distributed file system that provides high-throughput access to application data.
+Hadoop MapReduce: This is YARN-based system for parallel processing of large data sets.
+Hadoop MapReduce is a software framework for easily writing applications which process big amounts of data in-parallel on large clusters (thousands of nodes) of Commodity hardware in a reliable, fault-tolerant manner.
+
+The term MapReduce actually refers to the following two different tasks that Hadoop programs perform:
+
+The Map Task: This is the first task, which takes input data and converts it into a set of data, where individual elements are broken down into tuples (key/value pairs).
+The Reduce Task: This task takes the output from a map task as input and combines those data tuples into a smaller set of tuples. The reduce task is always performed after the map task.
+Typically both the input and the output are stored in a file-system. The framework takes care of scheduling tasks, monitoring them and re-executes the failed tasks.
+
+The MapReduce framework consists of a single master JobTracker and one slave TaskTracker per cluster-node. The master is responsible for resource management, tracking resource consumption/availability and scheduling the jobs component tasks on the slaves, monitoring them and re-executing the failed tasks. The slaves TaskTracker execute the tasks as directed by the master and provide task-status information to the master periodically.
+
+The JobTracker is a single point of failure for the Hadoop MapReduce service which means if JobTracker goes down, all running jobs are halted.
+
+Hadoop Distributed File System
+
+Hadoop can work directly with any mountable distributed file system such as Local FS, HFTP FS, S3 FS, and others, but the most common file system used by Hadoop is the Hadoop Distributed File System (HDFS).
+
+The Hadoop Distributed File System (HDFS) is based on the Google File System (GFS) and provides a distributed file system that is designed to run on large clusters (thousands of computers) of small computer machines in a reliable, fault-tolerant manner.
+
+HDFS uses a master/slave architecture where master consists of a singleNameNode that manages the file system metadata and one or more slaveDataNodes that store the actual data.
+
+A file in an HDFS namespace is split into several blocks and those blocks are stored in a set of DataNodes. The NameNode determines the mapping of blocks to the DataNodes. The DataNodes takes care of read and write operation with the file system. They also take care of block creation, deletion and replication based on instruction given by NameNode.
+
+HDFS provides a shell like any other file system and a list of commands are available to interact with the file system. These shell commands will be covered in a separate chapter along with appropriate examples.
+
+How Does Hadoop Work?
+
+Stage 1
+
+A user/application can submit a job to the Hadoop (a hadoop job client) for required process by specifying the following items:
+
+The location of the input and output files in the distributed file system.
+The java classes in the form of jar file containing the implementation of map and reduce functions.
+The job configuration by setting different parameters specific to the job.
+Stage 2
+
+The Hadoop job client then submits the job (jar/executable etc) and configuration to the JobTracker which then assumes the responsibility of distributing the software/configuration to the slaves, scheduling tasks and monitoring them, providing status and diagnostic information to the job-client.
+
+Stage 3
+
+The TaskTrackers on different nodes execute the task as per MapReduce implementation and output of the reduce function is stored into the output files on the file system.
+
+Advantages of Hadoop
+
+Hadoop framework allows the user to quickly write and test distributed systems. It is efficient, and it automatic distributes the data and work across the machines and in turn, utilizes the underlying parallelism of the CPU cores.
+Hadoop does not rely on hardware to provide fault-tolerance and high availability (FTHA), rather Hadoop library itself has been designed to detect and handle failures at the application layer.
+Servers can be added or removed from the cluster dynamically and Hadoop continues to operate without interruption.
+Another big advantage of Hadoop is that apart from being open source, it is compatible on all the platforms since it is Java based.
+1.5k Views · 42 Upvotes
+Sheetal Sharma
+Sheetal Sharma, studied at Amity University, Noida
+Answered Jul 25
+Before starting learning anything, first understand why you want to learn it.
+
+Then, after that learn basic concepts of that technology.
+
+If you want to learn Big Data then first understand what is Big Data, Why Big Data etc
+
+What is Big Data?
+Big data is huge-volume, fast-velocity, and different variety information assets that demand innovative platform for enhanced insights and decision making.
+
+Why Big Data?
+Big Data is a way to solve all the unsolved problems related to data management and handling, an earlier industry was used to live with such problems. With Big data analytics, you can unlock hidden patterns and know the 360-degree view of customers and better understand their needs.
+
+For more detailed answers refer below link:
+
+Why You should learn Big Data - Introduction to Big data - DataFlair
+
+You can refer below links for the best books of Big Data Hadoop:
+
+Best Books to Learn Big Data Hadoop - DataFlair
+
+After learning basics of Big Data go ahead with Hadoop.
+
+What is Hadoop?
+Hadoop is an open source tool from the ASF – Apache Software Foundation. Open source project means it is freely available and even its source code can be changed as per the requirements. If certain functionality does not fulfill your requirement, you can change it according to your need. Most of Hadoop code is written by Yahoo, IBM, Facebook, Cloudera.
+
+For detailed answer refer below link:
+
+Hadoop Tutorial - A Hadoop Introduction Guide - DataFlair
+
+Why Hadoop?
+Let us now understand why Hadoop is very popular, why Hadoop has captured more than 90% of big data market.
+
+Hadoop is not only a storage system but is a platform for data storage as well as processing. It is scalable (more nodes can be added on the fly), Fault tolerant (Even if nodes go down, data can be processed by another node) and Open source (can modify the source code if required).
+
+After learning Hadoop, move towards MapReduce and HDFS
+
+Hadoop HDFS Tutorial - HDFS Introduction, Architecture, Features & Operations - DataFlair- for HDFS
+
+Hadoop MapReduce Tutorial - A Comprehensive Guide - DataFlair- for MapReduce
+712 Views · 11 Upvotes
+Kloudmagica Infotech Private Limited
+Kloudmagica Infotech Private Limited, Director (2016-present)
+Answered Sep 25
+You may try our Big Data Hadoop Certification e-learning online course at https://www.kloudmagica.com/cour... . Currently we are giving huge festival discount.
+
+--------------------------------------------------------------------------------------------------------
+
+BUSINESS DEVELOPMENT TEAM
+
+KloudMagica Infotech Private Limited
+Email : support@kloudmagica.com / kloudmagica@gmail.com
+
+Website : https://www.kloudmagica.com/
+
+Facebook : https://www.facebook.com/kloudma...
+
+Linkedin : https://www.linkedin.com/in/klou...
+
+Youtube : https://www.youtube.com/c/kloudm...
+
+twitter : https://twitter.com/KloudMagica
+
+What is data
+
+Data is basically raw form of information which can be collected and analyzed to create information suitable for making correct decisions.
+
+Data can be
+
+unstructured data
+semi-structured data and
+structured data
+
+unstructured data
+
+unstructured data is basically some piece of information that doesn't sit in a traditional row-column database. As we can understand by name that unstructured data is something which is just opposite of structured data
+
+
+We can consider
+
+Word documents,
+PowerPoint presentations,
+newsletters,
+source code,
+hard-copy documents
+Images and graphics
+as an unstructured data.
+
+structured data
+
+The term structured data generally refers to data that has a defined length and format for big data. Structured data has the advantage of being easily entered, stored, queried and analyzed. Structured data refers to the data which is having a pre-defined data-model or having a schema or having a structure. Structured data is easily manageable and can be consumed using the traditional tools/techniques.
+
+Best example is your MySQL or oracle relational database. In a relational model, database would contain a schema and the data is stored in a table. — that is, a structural representation of data. For example, in a relational database, the schema defines the tables, the fields in the tables, and the relationships between the tables and in the data is stored in columns.
+
+semi-structured data
+
+Apart from structured and unstructured data, we also have a third category: semi-structured data. Semi-structured data is basically information that doesn't sit in a relational database but that does have some organizational properties that make it easier to analyze. Examples of semi-structured data might include XML documents and NoSQL databases.
+
+What is Big Data
+
+
+In last 5 years we have generated most of the data and, exponentially data generation is increasing due to latest and hi-tech devices. We can say 10-15 years back, Hadoop was not needed, because, data generation was under control. But in last 5-7 years everything has changed. We all having smart phones, with high speed internet connectivity, and, we know that smartphones having multiple sensors, to connect the call, to connect with the GPS offline or online. I just wanted to say that it doesn’t matter your smartphone is having internet connectivity or not, but, those all sensors are generating the data at same time. Suppose 5 billion people are using smart phones and all smartphones sensors are producing data 24/7, so, just assume how rapidly data is growing. suppose half billion people is really active on internet and continuously doing chatting on WhatsApp, or sending email or making calls on Skype, uploading the videos on YouTube, uploading pics on Facebook and Picasa, sending tweets, making google searches. The thing I wanted to say is that you know or not but since last 5 years you are the part of producing tremendous data. May be when you are applying for the credit card or home loan then you are filling the hard copy of the form but bank is keeping your data in computer and that is producing data. If you doing online transaction or withdrawing money from ATM that is producing data because bank must maintain your transaction details.
+Continuously millions of people are sending emails, doing video chat, voice conferencing, video conferencing, uploading the video and images, searching on google, talking over phone, everything is generating huge amount of data or we can say these all these event are contributing in data growth. In layman term These tremendous data which is getting generated at very high speed in different format is actually bigdata
+And the biggest problem is that all these data is not in structured format. Mostly we are dealing with semi or unstructured data. Now these datas are somehow produced by humans but the data which are produce by hi-tech devices are much much more than this. It is best time to know the Hadoop, because Millions of job is going to produce in next 2-3 years in Big data world. And many companies are already using big data
+Big Data Statistics
+
+According to one blog on A Wiki for Sharing Technology & Business Knowledge
+
+The majority of data between now and 2020 will not be produced by humans but by machines as they talk to each other over data networks. That would include, for example, machine sensors and smart devices communicating with other devices.
+In 2008, Google was processing 20,000 terabytes of data (20 petabytes) a day. 2.7 Zetabytes of data exist in the digital universe today and
+during the next five years, the amount of digital data produced will exceed 40 zettabytes, which is the equivalent of 5,200 GB of data for every man, woman and child on Earth, according to an updated Digital Universe study released today.
+IDC Estimates that by 2020, business transactions on the internet- business-to-business and business-to-consumer – will reach 450 billion per day and as much as 33% of all data will contain information that might be valuable if analyzed.
+In other words, the amount of data in the world today is equal to:
+
+Every person in the US tweeting three tweets per minute for 26,976 years.
+Every person in the world having more than 215m high-resolution MRI scans a day.
+More than 200bn HD movies – which would take a person 47 million years to watch.
+Sources of big data
+
+
+We are getting data in different formats and in most of the cases we have to store the data in its original format. Data is exponentially increasing due to evolution of advanced technology. We are getting data from different sources and these sources of data are divided into two categories:
+
+Human-generated:
+
+This is data that humans generated when it interacts with computers.
+
+Machine-generated data
+
+generally refers to data that is created by a machine without human intervention.
+
+If we club both human generated and machine generated data, then we can categorize like this
+
+Input data
+
+This is any piece of data that a human might input into a computer, such as name, age, income, non-free-form survey responses, and so on. This data can be useful to understand basic customer behavior.
+
+Social Media
+
+How social media is source of big data, I hope this one I do not have to explain because this is self-explanatory. There is a tremendous amount of data is getting generated on social networks like Facebook, Twitter. And the problem is that, the social networks produces mostly unstructured data formats which includes audio, videos, text, images and so on. This category of data source is referred as Social Media.Data is generated every time you click a link on a website. This data can be analyzed to determine customer behavior and buying patterns.
+
+Enterprise Data
+
+Enterprises having large volumes of data and problem is that all in different formats. So basically enterprises data can be flat files, can be emails, can be Word documents, can be spreadsheets, can be presentations, can be HTML pages/documents, can be pdf documents, XMLs, some legacy formats . The data which is distributed or scattered or spread across the organization in different formats can be referred to as Enterprise Data.
+
+Archives
+
+In older days hardware was costly so Organizations was archiving only very useful data but now hardware is getting cheaper so Organizations archive a lot of data which is either not required anymore or is very rarely required. In today's world, no organization wants to delete or discard any data, they generally capture and store as much data as possible. Other data that is archived includes records of ex-employees/completed projects, scanned copies of agreements, scanned documents, banking transactions older than the compliance regulations. There can be data in your organizations, which is less frequently accessed or even never accessed, is referred to as Archive Data.
+
+Transactional Data
+
+In enterprise world many applications perform different set of transactions, for example erp system, web applications, crm systems, mobile applications, and so on. To support the transactions in these applications, there can be one or mutliple relational databases as a backend infrastructure. This is mostly structured data but still it is generating huge data and contributing in big data world and is referred to as transactional data
+
+Financial data
+
+Lots of financial systems are now programmatic; they are operated based on predefined rules that automate processes. Stock-trading data is a good example of this. It contains structured data such as the company symbol and dollar value. Some of this data is machine generated, and some is human generated.
+
+Activity Generated
+
+Actually hi-tech machines are producing huge amount of data which surpasses the data volume generated by humans. These include data from industrial machinery, surveillance videos, censor data, medical devices, satellites, cell phone towers, and other data generated mostly by machines and is referred to as Activity Generated data.
+
+Public Data
+
+This data includes the data that is publicly available like data published by governments, data from weather and meteorological departments, research data published by research institutes, census data, sample open source data feeds, and other data which is freely and easily available over the internet or through some other medium to the public. These type of publicly accessible data is referred to as Public Data.
+
+Point-of-sale data
+
+When the cashier swipes the bar code of any product that you are purchasing, all that data associated with the product is generated.
+
+web log data
+
+When servers, applications, networks operate, they capture all kinds of data about their activity. This can amount to huge volumes of data that can be useful, for example, to deal with service-level agreements or to predict security breaches.
+
+Sensor data
+
+Sensor data can be radio frequency ID tags, smart meters, medical devices, and Global Positioning System data.
+
+Characteristics of big data
+
+
+We cannot simply say that big data is amount of data that one machine will not be capable to process. For a normal developer like you or me 1 GB data can be big data because our java program crashes when we try to process 1gb data using our java code. Suppose you have written some sorting algo then trying to sort 1 gb file and your program crashed then that data can be a big data for you.May be for some other person 1 TB data can be big data because his laptop storage capacity is 500 GB. So we must have certain parameter with the help of that we can define big data. Now We will see those parameters in detail.
+
+We have some V’s with the help of that we can define big data. If you will search over internet then you will get more than 16v but we will discuss 7 v’s which are most important. So do not worry about these V. We will discuss about this. It is generally accepted that big data can be explained with three V’s: Velocity, Variety and Volume.
+
+No one can change the importance of the definition of 3 V’s, but I do think that big data can be better explained by adding a few more V’s. These V’s explain important aspects of big data .Let’s look at these V’s and try to understand with the help of examples.
+
+Volume
+
+Volume means how much big data available in entire world right now
+
+At enterprise level it is very common to have Terabytes and Petabytes of the storage system. As we have seen already in what is Big Data and source of big data section that 80-90% of all data ever created was generated in the past 3 years. From now on, the amount of data in the world will double every two years.
+
+Volume means how much big data available in entire world right now. Still you have confusion okay make it simplest and I will show you with an example
+
+When you see your laptop or desktop storage details and it shows
+
+harddisk capacity = 1 tb
+
+used space is 500 gb and
+
+available space is 500gb
+
+that used space is basically volume.
+
+Velocity
+
+Velocity is the speed at which the data is created, stored, analyzed and visualized
+
+In big data world the Velocity is the speed at which the data is created, stored, analysed and visualized. In the big data world, data is created in real-time or near real-time. With the availability of Internet connected devices, wireless or wired, machines and devices can pass-on their data the moment it is created.
+In 1999, Wal-Mart’s data warehouse stored 1,000 terabytes of data. In 2012, it had over 2.5 petabytes of data.
+Velocity means how fast data is getting generated
+
+Make it simple with an example
+
+Suppose Yesterday you checked your laptop or desktop storage details
+
+harddisk capacity = 1 tb
+
+used space is 500 gb and
+
+available space is 500gb
+
+and after that you added 50gb data to you harddisk and now
+
+harddisk capacity = 1 tb
+
+used space is 550 gb
+
+added data is 50 gb
+
+and
+
+Available space is 450gb
+
+so you are adding50gb per day data in a day is termed as velocity and now volume is 550gb.
+
+Variety
+
+The various types of data like structured, semi structured and un structured
+
+There are many different types of data and each of those types of data require different types of analyses or different tools to use. These different types of data is basically variety.
+Make is simpler
+
+Variety: The various types of data like structured, semi structured and un structured
+
+Make it simplest
+
+In your hard disk you are storing java code, movies in mpeg, mp4 format, if you images in jpeg, jpg, gif format, you have text files, you have system generated logs these are basically variety of data.
+
+Veracity
+
+Veracity - The quality of the data being captured can vary. Accuracy of analysis depends on the veracity of the source data. Accuracy in data may lead to more confident decision making.
+
+We are having a
+
+lot of data in different volumes coming in at high speed is completely useless if that data is incorrect.
+Incorrect data can put a lot of trouble for an organization as well as for consumers. Therefore, organizations must have to ensure that the data is correct as well as the analyses performed on the data are correct. Especially in automated decision-making, where human is not getting involved anymore or feeding the data into an unsupervised machine learning algorithm, because The results of such programs are only as good as the data they’re working with.
+Accuracy of analysis depends on the veracity of the source data. Accuracy in data may lead to more confident decision making.
+Always You have to make sure that both the data and the analyses are correct. We have to understand that
+Big Data is the messy and noisy in nature so produced dataset should be accurate before analysis can even begin.
+Variability
+
+Variability - Variability refers to data whose meaning is constantly changing. This is a factor which can be a problem for those who analyze the data.
+This refers to the inconsistency which can be shown by the data at times, thus hampering the process of being able to handle and manage the data effectively.Big data is extremely variable. Suppose there is a super computer and we are going to submit 1 question to it, then first supercomputer have to figure out the meaning of question and then on the basis of that he can answer and that is extremely difficult because words have different meanings an all depends on the context. For the right answer, super computer must have to understand the context of the questions.
+Variability is not variety. Variability is often confused with variety.
+Say I have pizza shop that sells 10 different type of pizza. That is variety. Now imagine you go to that pizza shop three days in a row and every day you buy the same type of pizza but each day it tastes and smells different. That is variability.Variability is thus very relevant in performing sentiment analyses. Variability means that the meaning is changing (rapidly). In (almost) the same tweets a word can have a totally different meaning. In order to perform a proper sentiment analyses, algorithms need to be able to understand the context and be able to decipher the exact meaning of a word in that context. This is still very difficult.
+
+Value
+
+Big Data = Data + Value?
+Of course, data in itself is not valuable at all. The value is in the analyses done on that data and how the data is turned into information and eventually turning it into knowledge. The value is in how organizations will use that data and turn their organization into an information-centric company. However, the cost of poor data is really huge. So what does all of this tell us about the nature of Big Data? Well, it’s massive and rapidly-expanding, but it’s also noisy, messy, constantly-changing, in hundreds of formats and virtually worthless without analysis and visualization.
+In the world of Big Data, data and analysis are totally interdependent- one without the other is virtually useless, but the power of them combined is virtually limitless.
+
+Visualization
+
+Once data has been processed, you
+
+need a way of presenting the data in a manner that’s readable and accessible- this is where visualisation comes in.
+Visualisations can contain dozens of variables and parameters- it can be the x and y variables of your standard bar chart and finding a way to present this information that makes the findings clear is one of the challenges of Big Data.
+181 Views · 1 Upvote
+Rahul RM
+Rahul RM, Learner !!
+Updated Dec 10, 2015
+This answer is for beginners.This how i currently studying Machine learning,NLP and Data Mining. 
+ Learn
+
+Python
+R
+Natural Language Processing
+Machine Learning
+k-Means
+Support Vector Machines (SVM)
+k-Nearest Neighbors (kNN)
+Naive Bayes.
+Cluster
+These are very useful algorithms  used in data mining.
+
+Tool-Kit
+
+Scikit-learn
+NLTK
+Weka
+SAS
+Data Analysis
+
+The R Project for Statistical Computing
+Pandas - Python libraries
+Julia Language
+IPython and jupiter
+Online resources
+
+CS109 Data Science
+Statistical Thinking for Data Science and Analytics
+Introduction to Big Data with Apache Spark
+Data Science and Machine Learning Essentials
+Excel for Data Analysis and Visualization
+R tutorials on dplyr, data.table, ggvis, R Markdown & more | DataCamp
+Machine Learning
+Deep Learning
+
+Deep Learning Courses Deep Learning Courses
+
+Hadoop and Spark
+
+Page on coursera.org
+Introduction to Big Data
+Introduction to Big Data Analytics
+Machine Learning With Big Data
+Hadoop Platform and Application Framework
+Big Data - Capstone Project
+HDP Analyst: Data Science - Hortonworks
+HDP Analyst: Apache HBase Essentials - Hortonworks
+Hadoop Tutorials from Hortonworks-  - These tutorials are designed to ease your way into developing with Hadoop.
+
+Correct me if i wrong.This is the hierarchy am following currently.
+Guys one thing i understand Machine learning is very much important topic in Data Analyst Big Data and Data Mining.
+
+All the best :)
+3k Views · 29 Upvotes · Answer requested by Amog Chandrashekar
+Gerard Danford
+Gerard Danford, Academic PhD (Aalto) MBA (LBS)
+Answered Dec 5, 2015
+Where Is Big Data Going?
+
+Understanding 'What Big Data Is' involves less of understanding the past, and more about understanding where Big Data is going in the future (a moving target). However, predicting the future of Big Data is hard. Rod Smith (VP IBM Emerging Internet Technologies) is better placed than many others to forecast what the unknown future means for Big Data. Here is what he has to say about that.
+
+Big Data 2.0
+
+Big data and analytics will continue to be a disruptive business force. According to Rod, we are just now entering another phase – a real-time digital business transformation, where businesses are realizing that the time to adjust to markets, customer opportunities and threats is shrinking quickly. Therefore, leveraging historical and streaming data with “just-in-time” analytics at the time of business decisions is on the horizon. Furthermore, in the near future machine learning will play an important role in automating many business actions and processes. All this is spurring huge innovation strides across the industry and within open source communities.
+
+New Business Imperatives & Technologies
+
+Rod describes 15 business imperatives and technologies he is monitoring over the next few years which may enable businesses to meet the disruptive business forces:
+
+Creating new real-time business models.
+Enhancing risk-aware decision making.
+Fighting fraud and counter threats.
+Optimizing operations.
+Attracting, growing and retaining customers.
+Developing just-in-time analytics.
+Meeting fast changing customer/business priorities.
+Enhancing interactivity to direct solutions requests.
+Implementing real-time dashboards.
+Mastering Machine Learning (ML).
+Enabling multiple business lines to access the same back-end data.
+Developing more client-side interactivity.
+Implementing lean product roll-out in days... not weeks.
+Sensitizing processes to contexts.
+Implementing Open Source.
+
+Businesses wishing to prepare for the trans-formative impact of Big Data 2.0 will need to determine which imperatives/technologies are going to have a significant impact on their operations! Students of Big Data will need to learn about all 15 imperatives/technologies. 
+
+“The future depends on what you do today.”
+~Mahatma Gandhi
+
+
+Watch Rod describe in detail: Where Big Data Is Going?
+
+_________________________________________________________
+The author has curated this video and has no affiliation with IBM or Rod Smith
+2.1k Views · 8 Upvotes
+Amar Parkash
+Amar Parkash, Building Data Centric Products for last 4 years
+Answered Sep 7, 2013
+Originally Answered: What do I need to learn to work with big data?
+I would suggest you to start reading about Hadoop and other projects around the Hadoop ecosystem (Hive, Pig, Flume, HBase). Hadoop: The Definitive Guide 3rd Edition (http://www.flipkart.com/hadoop-d...) covers everything in detail.
+
+Its very easy to get started with Hadoop using Cloudera's VM which has all components pre-installed. You can also install Hadoop in Pseudo distributed mode on your machine and get started with simple use cases Once you start practicing small small things you will definitely come up with some cool ideas to apply Big Technology in your current company. You can refer to this question to get started with Hadoop :http://www.quora.com/Apache-Hadoop/How-do-you-get-started-with-Hadoop
+3.9k Views · 6 Upvotes
+Vikram Jha
+Vikram Jha, Founder & CEO at AI driven startup
+Answered May 5, 2014
+Originally Answered: What are the learner friendly resources to learn about big data science?
+There are many MOOC courses which can help you to get expertise data science domain.
+
+If you are novice, you can start with Udacity's data science courses. These courses are not theory-intensive courses and can help you even you don't have any prior knowledge.
+https://www.udacity.com/courses#!/data-science
+You can use Coursera' s data science specialization courses where thrust is on theoretical data science with exposure to some real world problems.
+https://www.coursera.org/specialization/jhudatascience/1?utm_medium=listingPage
+Edx is one such MOOC platform where you can find range of courses relating to data science which can be used for advanced level knowledge in data science.
+https://www.edx.org/course-list/allschools/statistics-data-analysis/allcourses
+
+No learning is complete unless it is being applied somewhere in the real world problems. Kaggle(http://www.kaggle.com/) is an ideal platform for that. 
+
+Keep a tab on the recent advances in Machine learning/data science field by following some popular blogs like following once you have gain some foothold in data science after going through aforementioned courses.
+
+Simply Statistics (http://simplystatistics.org),
+R-bloggers  (http://www.r-bloggers.com),
+DataTau (http://www.datatau.com),
+KD  Nuggets (http://www.kdnuggets.com),
+Revolutions  (http://blog.revolutionanalytics....)
+5.7k Views · 13 Upvotes
+Sébastien Corniglion
+Sébastien Corniglion, Dean - Data ScienceTech Institute
+Answered Nov 28, 2015
+IMHO, it really depends on which kind of career you would be embracing.
+
+From the discussions I have all the time with our industrial partners and scientific advisors at Data ScienceTech Institute, organisations need six flavours of Big Data experts.
+
+The "(Big) Data Analyst" is more at the end of chain and collaborates with Data Scientists on technical and mathematical aspects. She/He focuses on data exploration thanks to business knowledge, for extracting valuable "KPIs". She/He is very talented to explain complex results to decision-makers, thanks to advanced practice in data visualisation.
+
+The "Data Consultant" is the man-in-the-middle (in a good way!), interacting with all stakeholders of the data value chain (from the Big Data Architect to the CDO and/or CTO). She/He helps organisations to define, structure and implement their data strategy. Her/His global understanding of the tools and techniques available on the market, creativity and sensitivity to business-driven goals allows her/him to propose innovative solutions.
+
+The "Chief Data Officer" is an experienced executive, in charge of the organisation's data governance and value creation. She/He will embodies organisations data strategies in serving the other executives and the Board with meaningful "golden nuggets" of knowledge for corporate level decision-making.
+
+These three profiles need training similar to our MSc Executive Big Data Analyst Master programme ;)
+
+***
+
+The "Big Data Architect" is an expert in advanced IT allowing storage, manipulation and restitution of these "Big Data". She/He designs, implements and administers data platforms or even data centres, locally, in the cloud or in hybrid mode, using platforms such as Amazon AWS. She/He is at the very beginning of the data value chain, and one of the pillars of any Big Data project.
+
+The "Data Scientist" take part in the heart of scientific operations. She/He has very advanced technical and mathematical skills and can leverage enterprise tools (SAS, SPSS, etc.) as well as analysis, designing and implementing its own algorithms in various programming languages for transforming data to information and then into useful knowledge, always business-driven.
+
+The "Chief Technology Officer" is an experienced executive, in charge of tools, techniques, methods and solutions for the whole organisation. She/He drives their analysis and design and is in charge of their evolutions at corporate level.
+
+These three profile need training similar to our MSc Data Scientist Designer Master Programme ;)
+
+Hope this helps!
+1.9k Views · 7 Upvotes
+Oleh Rozvadovskyy
+Oleh Rozvadovskyy, Ignite/AppReal Marketing Manager
+Updated Sep 2, 2015
+Originally Answered: How do I start learning big data?
+If you you want to learn about Big Data, there may be good idea to join some free webinar about practical application.
+
+Next week, on September 10, we're going to run our free webinar on similar issue, but for Cassandra. It  may be useful for you, especially when you need to learn more about Big Data or NoSQL.
+
+During this webinar, we will build a solution that ingests real-time data from a temperature sensor connected to Raspberry Pi into Cassandra for further processing and analytics. We will also review some best practices on IoT data modelling and big data and demonstrate how easy it is to reuse them in Kaa IoT Platform.
+
+If you want to see, how Cassandra can be used for collecting the real-time data from temperature sensors, please feel free to register here.
+1.5k Views · 7 Upvotes
+Karlijn Willems
+Karlijn Willems, Data Science Journalist at DataCamp
+Answered Jan 25
+From a point of view where “big data” only differs from ‘regular’ data in the aspects of Volume, Velocity and Variety (the famous 3 Vs), you can place big data in the broader context of data science, a discipline that aims to extract knowledge or insights from (un)structured data. You could consider big data to be inherently connected or even part of data science, as the data that you’ll be working as a data scientist or part of a data science team can be big data.
+
+I think that you should therefore also see learning big data in the broader context of learning data science. Check out the eight steps that are mentioned in this infographic: Learn Data Science - Infographic. What you should learn is the following:
+
+You need to understand how big data differs from regular data,
+Grasp the distributed approach to data storage and processing, and
+Understand the advantage of the in-memory cluster computing framework.
+
+My explanation might seem abstract up until now, but was needed to explain the steps that I went through when I got into data science:
+
+Step 1. Make sure you can program in Python or Scala
+For Python, you could consider the following courses: Learn Python for Data Science - Online Course and Introduction to Python for Data Science, where you’ll learn the Python you need to get started with data science. There are of course plenty of other materials, but in the end, I mentioned these resources because you should aim to get the most practical, learning-by-doing introduction to Python that you can get.
+
+For Scala, I made use of “Programming in Scala” by Odersky. This book gives a thorough introduction, with plenty of examples to get started. I haven’t found any Scala courses that gave a very hands-on approach, so I will just mention the book here. Also, if you consider the following paragraph, you’ll also understand why a practical approach to learning Scala is less relevant at first.
+
+What to pick? Think about which programming languages you already know. If you have programming experience with Java, just go for Scala. This should be a no-brainer because Spark just works better with Scala and isn’t too tough to handle if you already are at that level. If you’re just starting out, pick Python, but consider moving to Scala in the long run.
+
+Step 2. Get Introduced to Spark
+Consider following Introduction to Apache Spark and the follow-up courses. Also take a look at Apache Spark Tutorials, Documentation, Courses and Resources all in one place | SparkHub and Learn Spark. When you’re going through these examples, try to get as much hands-on as possible. This will help you in the long run!
+
+Step 3. Check Out the Hadoop Framework
+Getting a thorough overview of the Hadoop framework is no excessive luxury. Use Hadoop: The Definitive Guide for a very detailed introduction. To really learn how to work with, for example, the Cloudera stack, you can download Cloudera Enterprise Downloads.
+
+Step 4. Get Introduced to/Revise Data Management
+A component that many people forget when they’re working with Big Data is the fact that the data itself brings specific problems to the table about which you usually don’t need to worry when you’re working with simple text files.
+
+Seriously consider reading up on what it means to implement data quality and master data management, and if you don’t have a knowledge basis in data warehousing and BI, put that even before data quality and master data management to start with. Later, you should also consider data architecture and data security.
+
+Step 5. Practice!
+At first, check out some examples, such as snowplow/spark-example-project and databricks/learning-spark.
+
+Next, find a big data problem and start working on that. Go through all of the steps that you would go through with the data science workflow: import the data, explore, wrangle, model, validate and visualize. You can use the steps that you have already gone through above to go through most of the phases, but don’t forget to also get started with visualization software such as Tableau or make use of the Bokeh visualization library.
+
+Step 6. Consider Following A Training (Optional)
+If you really want to, you can also following a corporate or private training from Cloudera or Databricks Training.
+1.1k Views · 7 Upvotes
+Kapil Nakra
+Kapil Nakra, Cofounder at Digital Vidya
+Answered just now
+Before answering how to learn big data i would answer What To Learn In Big Data?
+
+For the big data learning path, here are some prerequisites to learn big data and also ѕоmе particular аbіlіtіеѕ thаt саn offer аѕѕіѕtаnсе? Lеаrnіng of:
+
+Data mіnіng аnd machine lеаrnіng mеthоdѕ
+Infоrmаtіоn visualization tооlѕ
+Information wаrеhоuѕіng
+ETL (соnсеntrаtе, dесірhеr, lоаd)
+(Hаdоор is аn Apache undеrtаkіng to give аn open-source usage оf frаmеwоrkѕ for ѕоlіd, adaptable, disseminated processing аnd іnfоrmаtіоn stockpiling.)
+Prescient demonstrating
+Mеаѕurаblу displaying wіth іnѕtrumеntѕ, fоr еxаmрlе, R, SAS, оr SPSS
+Orgаnіzеd and unstructured databases
+
+Coming back to your question how to learn big data: The only way to learn & become an expert is to learn practically. Many college offers various masters degree but i would suggest to join online certification course rather than going for a degree.
+
+I would like to share Data Science Courses designed by Digital Vidya where you can learn data science based on your knowledge & skills level.
+
+Let us look at the Big Data Specializations offered by Digital Vidya:
+
+i) Big Data Engineer - If you have been working with data - in roles like, database modeling specialist, ETL (Extract, Load, Transform) Engineer, Data Analyst, SQL expert, managing transaction systems. This is the next step of upskilling to work with the Big Data technologies for ETL, that includes specialization in Pig, Hive, Sqoop, Flume.
+
+ii) Big Data Application Engineer - As a programmer you have been creating, building, maintaining enterprise scale applications. And now you want to upskill to the Big Data technology platform and work with the most used real-time processing framework, Apache Spark. This is a very comprehensive course that will help you develop a deep set of skills to work with the real-time processing framework and its ecosystem.
+
+What kind of practical experience will I get in this course?
+
+The Class Labs, Home Assignments, and Capstone Projects are designed with a lot of thought that enable the learners to experience deep learning and confidence to position themselves in the role of the analyst in the industry.
+
+You shall also get an opportunity to do internship with our partners/clients based on availability and requirement.
+
+Hope this helps.
+1 View
+Chakravarthy Drithin
+Chakravarthy Drithin, A normally abnormal vivid dreamer
+Answered Jul 16, 2015 · Upvoted by Jalem Raj Rohit
+Originally Answered: How do I start learning big data?
+I just want to give the facts first.
+
+Big Data isn't a single technology that can be learnt in a month. Big Data is a cluster of many technologies and tools that are used in various scenarios. 
+
+Certain Pre-requisites to pursue this giant are:
+
+1) Unix/Linux operating system and shell scripting: 
+
+Good practice in shell scripting makes your life easier in Big Data. Many tools got the command line interface where the commands are based on the shell scripting and Unix commands.
+
+2) Core Java:
+
+As Hadoop (a framework to play around with Big Data) itself a Java API, programming skill in Core Java enables us to learn programming models like MapReduce
+
+C++, Python, Shell scripting can also do the Big Data processing. Java is kind off direct and you do not need to do it with the help of third party aid. 
+
+3) SQL (Structured Query Language):
+
+SQL, popularly known as 'sequel' makes Hive (a query language for Big Data) easier. Playing around with SQL in relational databases helps us understand the querying process of large data sets
+
+After the pre-requisites, we got to decide regarding what we got to do with Big Data. Tools and Technologies with respect to the area of interest are as follows:
+
+Say you are working with 'Hadoop' framework:
+
+-> Hadoop modeling and development: MapReduce, Pig, Mahout
+-> Hadoop storage and data management: HDFS, HBase, Cassandra
+-> Hadoop data warehousing, summarization and query: Hive, Sqoop
+-> Hadoop data collection, aggregation and analysis: Chukwa, Flume
+-> Hadoop metadata, table and schema management: HCatalog
+-> Hadoop cluster management, job scheduling and workflow: ZooKeeper, Oozie and Ambari
+-> Hadoop Data serialization: Avro
+
+You can be a multi tasking by learning more than one of the above mentioned. Well, it's a matter of choice and interest.
+
+Below diagram can give a better understanding:
+
+
+
+P.S: 1)I'm a student currently pursuing some of the attributes mentioned above. 
+2)My apologies for the length of this answer but it's worth it to get good awareness about the Big Data arsenal 
+3) There are many frameworks which offers solutions to play with Big Data.  I chose Hadoop to explain.
+4) Big Data is huge! You got to figure out what you wanna do precisely
+5.4k Views · 27 Upvotes
+Mariam Yusuf
+Mariam Yusuf
+Answered Mar 12, 2014
+Originally Answered: What are some introductory-level articles to understand Big Data?
+A good, four-part article for all those interested in Big Data, evolution of Hadoop and data processing using MapReduce. Interesting, simple and concise.
+
+Part 1: Big Data, GFS and MapReduce – Google’s Historic Contributions
+http://www.technoduet.com/big-da...
+
+Part 2: Hadoop – The Open Source Approach To Big Data Processing You Ought To Know
+http://www.technoduet.com/hadoop...  
+
+Part 3: MapReduce – The Big Data Crunching Framework
+http://www.technoduet.com/mapred...
+
+Part 4: MapReduce Framework – How Does It Work?
+http://www.technoduet.com/mapred...
+526 Views
+Darshita Patel
+Darshita Patel, BIGDATA - Because data never sleeps.
+Answered Aug 6, 2016
+Originally Answered: What is big data? And how can I learn it?
+In Simple Language as the term says all.
+
+BIG + DATA = A big Problem for every IT giant.
+
+The big raw chunk of structured and unstructured data produced by Mankind/System
+
+The reason of BIGDATA is:
+By Liking/sharing/Uploading Post on Facebook.
+By writing mails
+By Uploading and keeping stuff online (Cloud Storage or drives)
+Every tweet.
+Each Photo on Instagram
+Every video on YouTube.
+Browsing Netflix.
+Each online Transaction.
+Every Information on Facebook.
+Each connection on LinkedIn.
+Microsoft services.
+So, Actually BIGDATA is not a technology It’s a tool - Day by day this chunk of data is keep incensing. And here comes the probem for IT giant that how to Analyse this Big chunk of DATA ?
+
+Previously, it was easy task when the data is in terms of Petabytes so it was easy task to analyse with traditional methods - But now it is in terms of Yotabytes so here bIgdata comes to the picture.
+
+BIGDATA : The problem created by us and the solution of this is following Tools:
+
+MongoDB, Pig, Hive, Hadoop
+
+Big data can be described by the following characteristics:
+
+Volume
+
+The quantity of generated and stored data. The size of the data determines the value and potential insight- and whether it can actually be considered big data or not.
+
+Variety
+
+The type and nature of the data. This helps people who analyze it to effectively use the resulting insight.
+
+Velocity
+
+In this context, the speed at which the data is generated and processed to meet the demands and challenges that lie in the path of growth and development.
+
+Variability
+
+Inconsistency of the data set can hamper processes to handle and manage it.
+
+Veracity
+
+The quality of captured data can vary greatly, affecting accurate analysis.
+800 Views · 6 Upvotes
+Patrick Pitre
+Patrick Pitre, I was doing big data before it was cool
+Answered Jun 24, 2014
+Originally Answered: How do I learn or get a profession in Big Data?
+It depends on what you want to do with "Big Data". If you want to be on the techie side of it, then getting a degree in Computer Science would be a good start. If college isn't your route then learning how to write Map Reduce jobs, HDFS, HBase, Java, Pig, Hive, Zookeeper are a must, and then probably adding Sqoop, Ambari, Impalla, Oozie, CassandraDB (or some other NoSQL DB), and Flume.. But since it will take a while to learn all of that, you should probably add Spark as that will be the next step from Hadoop.
+
+If you don't want to take on the techie side of it, then being an analyst would be the less techie way to go. To be an analyst or even a data scientist you would need to learn SQL, R, (and probably Java or Python) statistics, and then if you stay in the private sector, determine which industry - business, biotech, Utilities, Telecom, etc. Once you figure that out, then learn the sector so you understand the problems you'll be solving with data.
+
+OR
+
+Become a Data Management professional and not worry about whether the data is large, small, medium or whatever they want to add to it. This involves learning SQL, a RDBMS (Oracle, Teradata, DB2, etc), ETL(ELT or however you want to put those three letters together), Master Data Management, Metadata Management, Data Quality best practices, and Data Modelling/Data Architecture.
+1.7k Views · 10 Upvotes
+Edward Lau
+Edward Lau, Quant Trader in Chicago
+Answered Sep 16, 2016
+To be a full-stack Data Scientist, you are expected to be equipped with programming skills, statistical/maths theory, time series analysis, machine learning and also some big data tool like Hadoop and MapReduce.
+
+Here are some learning materials I found that may be useful:
+
+Machine Learning, Deep learning and NLP:
+
+Book: {Pattern Recognition and Machine Learning}
+
+Course: {Udacity 730 - Deep Learning}
+
+Book: {Pattern Recognition and Machine Learning}
+
+Course: {Stanford CS224d}
+
+Course: {Text Mining and Analytics}
+
+Book: {Foundations of Statistical Natural Language Processing}
+
+Course: {Stanford CS231n}
+
+Statistical Theory:
+
+Book: {Introduction to Mathematical Analysis}
+
+Book: {Bayesian Data Analysis}
+
+Book: {Convex Optimization}
+
+Course: {Stanford CVX101}
+
+Programming:
+
+Tutorial: {Python official Tutorial} (That would be enough)
+
+Book: {Head First Java}
+
+Course: {CS97si}
+
+Book: {Problem Solving with Algorithms and Data Structures}
+
+Online Practicing: Leetcode
+
+Course: {Algorithms Part I}
+
+Course: {Algorithms Part II}
+
+SQL Tutorial: SQL Tutorial
+
+Big Data Tools
+
+Tutorial: {Regular Expression for Python}
+
+Course: {Mining Massive Data Sets}
+
+Course: {Udacity 617 - Intro to Hadoop and MapReduce}
+
+Course: {Coursera: Introduction to Apache Spark}
+627 Views · 2 Upvotes
+Arush Kharbanda
+Arush Kharbanda, Big Data Architect, sigmoid.com
+Answered Sep 7, 2016
+I won't mix Big Data and Data Science.
+
+Big Data is what engineers practice and Data science is for Data Scientists.
+Engineers create a system and then solve problems like - scalability, maintainability, performance and fault tolerance.
+
+I will mark material according to the level of expertise you seek.
+
+Beginner level is when you want to get started with Big Data and start developing applications.
+
+Then expert level is when you want to improve the quality of your applications.
+
+So
+
+1. Start with the google papers on Mapreduce and DFS.
+Google Research Publication: MapReduce
+The Google File System
+
+2.Move to Hadoop: The definitive Guide. 
+The best place to learn hadoop and related technologies, thoroughly.
+
+3.Develop a simple application using Hadoop Mapreduce
+511 Views · 3 Upvotes
+Dishant Tolani
+Dishant Tolani
+Answered Oct 10
+The enormous amount of data being produced across various industries, globally, is having a massive impact on “Big Data”. The momentous increase in the smart phones and other smart devices (that constantly generate data) has been the most important contributor of “Big Data”. With the way things are moving in terms of sales of smart phones, and other smart devices, there does not seem to be a slowdown in the production of data. In fact, it is only going to rise, making it more challenging to store and process the data in hand.
+
+The more prominent areas of big data applications are telecommunications, retail, healthcare, manufacturing and financial services. Though, financial services industry is the frontrunner among the industries demanding big data solutions. Data storing and processing has become the most crucial aspect of data management for corporates worldwide. And that has been the most important reason behind the rise of Hadoop technology. Hadoop is parallel processing framework that makes the processing of “Big Data” (mostly unstructured) easier.
+
+The demand for Hadoop Developer is constantly rising because of the massive data that is being generated every day. There will be a demand for around 200,000 Hadoop developers in India by 2018, according to the latest survey. In US, there will be shortage of 140,000 to 200,000 Hadoop developers by the end of 2018. One thing is for sure that there is a huge demand for Hadoop Developers in the world but there are not enough Hadoop Developers. This gap in the demand and supply of Hadoop Developers presents a wonderful opportunity for professionals to make a career in Hadoop
+
+Development. The major companies hiring Hadoop Developers are Amazon, e-bay, Netflix, Flurry, VMware among others.
+
+For professionals, there could not be a better time to get themselves trained on Hadoop Development. Collabera TACT offers the best Hadoop Development training for freshers and professionals. Collabera TACT’s best-in-class infrastructure, industry expert trainers and industry recognised certificate makes Hadoop Development training course one of the most sought after courses for aspiring
+
+Hadoop professionals.
+
+For more details on Hadoop developer course and to find out various career options in detail, please feel free to contact dishant@collaberatact.com.
+18 Views
+Nitendra Gautam
+Nitendra Gautam, More than 3 years experience in Data Analysis
+Updated Feb 12, 2016
+No, it is not tough to learn Big Data Hadoop .Apache Hadoop is a big ecosystem consisting of many technologies ranging from an processing framework(MapReduce),Storage system(HDFS),an data flow language tool(Apache Pig) ,an SQL language tool(Apache Hive),tool for ingesting data on hadoop(Apache Sqoop) and a Non Relational Database(Hbase) .So one needs to understand all these technologies to be able to learn Hadoop.
+
+There are many free sources to learn Hadoop and related technologies .
+
+I have mentioned some links which i am familiar of
+
+.Hadoop Eco System - Hadoop Online Tutorials
+
+Video Courses
+
+bigdatauniversity.com
+
+bigdatauniversity.comLearn From the Industry's Best - Big Data University
+
+Mapr Academy Page on mapr.com
+
+Udacity Video Tutorial Page on udacity.comitversity
+
+myhadoopguru.com
+
+For Nosql related technologies like cassandraFree Cassandra Tutorials and Training
+
+869 Views
+Aditya Sharma
+Aditya Sharma, Working as Big data Consultant at Infosys
+Answered Apr 4
+You can very easily learn this technology and enter the Big data world. It just requires basic java knowledge and you can learn the technology easily as mentioned below:
+
+To start with, firstly you should know what is Big Data and why you should learn it?
+
+Why You should learn Big Data ??
+
+For more learnings on the topic, go through below links:
+
+Understand What is Big Data - Biggest Buzzword
+Best Books to Learn Big Data & Hadoop
+Hadoop Introduction – A Comprehensive Guide for beginners
+Apart from going through above material, to get good job in Big Data Hadoop, you need to have more of practical knowledge rather than theoretical knowledge only. You should have done few POCs and a live project to get hands on knowledge. This is what most of the industries are looking for from a candidate appearing for interviews.
+
+I would suggest you to go through below link to get more details about 1 such course from DataFlair:
+
+Certified Big Data & Hadoop Training Course
+
+They provide training at much lesser price as compared to others with most of the training as practical and direct guidance from trainer who is having more than 18 years experience. Their Complementary Java course will help you in learning java essentials for Big data Hadoop.
+
+You can visit their testimonial section to read students view below:
+
+Testimonials | Certified Training Courses | DataFlair
+
+Once you are done with POCs and project, their instructor will assist you in resume preparation and mock interviews will assist you in cracking the interviews at any company and landing your dream job.
+230 Views
+James Fisher
+James Fisher, B-school Prof
+Answered Feb 24, 2012
+Originally Answered: How do I learn about big data?
+If you're looking to get a good grasp of the big-picture as it relates to big data--sort of zero-to-sixty in an hour or so--then it's really hard to beat the perspective offered by McKinsey & Company. In particular, I recommend the research report "Big data: The next frontier for innovation, competition, and productivity" which is published and available on the website of the McKinsey Global Institute: http://www.mckinsey.com/Insights...
+
+Your can get it multiple forms and formats: executive summary, full report, eBook (i.e., iPad, Nook, Sony Reader), Kindle version--even a Podcast. Also you can follow the McKinsey patter on big data on Twitter with these hastags: #McKBigData and #BigData. The company's Twitter account is @McKQuarterly.
+
+I can think of few that manage knowledge, expertise and personnel as smartly as McKinsey and then showcase it so effectively and accessibly.
+2.1k Views · 5 Upvotes
+Gareth Mitchell-Jones
+Gareth Mitchell-Jones, Have worked within, managed and consulted to leading data science organisations
+Answered Jul 18, 2015
+Originally Answered: How can I learn big data?
+Just learn normal 'data'...and forget it's ever gotten big...in a year it will be small, relatively.
+
+Big data is just more of it, delivered faster, in often less structured storage form.
+
+You might want to learn:
+
+Databases and platforms
+Querying / interrogating databases / platforms
+Loading data into databases / platforms
+Analytics
+Statistics
+Reporting
+Machine learning
+Programming
+Visualisation
+
+But that is data science...
+
+'Big data' is just a collective term about data and its scale. 
+
+It's not something that you really learn.
+
+It is essentially a term invented to describe something that many people were doing before the phrase was coined. So in reality it's just 'data'.
+3.4k Views · 18 Upvotes
+Sourav Dutta
+Sourav Dutta, Software Engineer, Machine Learning & NLP Enthusiast
+Answered Dec 28, 2014
+Originally Answered: How do I learn about big data?
+I would like to suggest the IBM Big Data University website. It is a website where you will find books, courses and other resources related to Big Data. And there is no lack of quality in there because everything will be taught by the experts of the industry (IBM Big Data Analytics).
+
+Link: Big Data University
+
+Hope it helped you. Take care :)
+723 Views · 1 Upvote
+Anonymous
+Anonymous
+Answered Sep 19, 2016
+Originally Answered: What are the perquisites to learn big data?
+Businesses are using the power of insights provided by big data to instantaneously establish who did what, when and where. Visit this link to learn ….Big Data The biggest value created by these timely, meaningful insights from large data sets is often the effective enterprise decision-making that the insights enable.
+
+Extrapolating valuable insights from very large amounts of structured and unstructured data from disparate sources in different formats require the proper structure and the proper tools. To obtain the maximum business impact, this process also requires a precise combination of people, process and analytic tools.
+
+That could include Web server logs and Internet Click Stream data, social media content and social network activity reports, text from customer emails and survey responses, mobile-phone call detail records and machine data captured by sensors connected to the INTERNET Things Some people exclusively associate big data with semi-structured and un structed Data of that sort, but consulting firms like Gartner Inc. and Forrester Research Inc. also consider transactions and other structured data to be valid components of big data analytics applications.
+
+Big data can be analyzed with the software tools commonly used as part of Advance Analytics disciplines such as Predective Analysis Data Mining, Text Analytics and Statical Method. Mainstream BI software and Visualization tools can also play a role in the analysis process. But the semi-structured and unstructured data may not fit well in traditional Data Warehouse based on Relational Database. Furthermore, data warehouses may not be able to handle the processing demands posed by sets of big data that need to be updated frequently or even continually -- for example, real-time data on the performance of mobile applications or of oil and gas pipelines. As a result, many organizations looking to collect, process and analyze big data have turned to a newer class of technologies that includes Hadoop and related tools such as Yarn Spook, Spark, and Pig as well as No Sql databases. Those technologies form the core of an open source software framework that supports the processing of large and diverse data sets across clustered systems.
+315 Views · 1 Upvote
+Joseph T
+Joseph T, BIG DATA NEW TECHNO
+Answered Jul 6
+global big data-as-a-service market is growing owing to the rise of various real-time information from different sources including, but is not limited to, the social media, log files, mobile devices, and so on. The demand for big data is increasing across the different business segments and huge investments are made by the key market players in the development and research of the big data, which in turn will create great opportunities for the market. In the recent years, the major IT brands are introducing big data-as-a-service market solutions in the global market to improve their reputation and market value. This, in turn, is positively impacting them and hence they are able to generate clients for themselves. This, in turn, is helping the prominent market players to acquire new small-scale companies and hence increasing the competition in the market. The other features that are favoring the companies include joint ventures, constant up gradation and collaborations. The factor that hampers the market growth is related to privacy, which is affecting the market growth.
+
+Get Free (PDF) Sample Of Know About More BIG DATA UPCOMING INDUSTRY WITH TECHNOLOGICAL BREAKTHROUGH.
+
+The key vendors that are occupying the big data-as-a-service market include EMC Corporation, Hewlett-Packard Company, Microsoft Corporation, SAP SE, Teradata Corporation, Datameer, Opera Solutions, MapR Technologies, Singapore Technologies Tele media, Northgate Capital, Red Hat, Amazon Web Services, Google, IBM Corporation, Oracle Corporation, SAS Institute, Inc., Birst, Sisense, SunGuard, Mirantis, Kleiner Perkins and Wipro Technologies.
+110 Views
+Sahil Kharb
+Sahil Kharb, Yato Dharmastato Jayah - Where there is Dharma, there is victory!
+Answered Aug 11, 2014
+Originally Answered: What are some good sources to learn about big data?
+There  a number of number of resources from where you can start learning about apache hadoop :
+Udacity course :-  Beginner Hadoop and MapReduce Course Online
+A great initiative :- Big Data University - it have a bunch of free courses that too short and concise.
+Above two are really beginners level courses.
+
+For datasets you have again bunch of options :
+Yahoo datasets - Webscope | Yahoo Labs
+
+Wikipedia Datasets - wiki.dbpedia.org : About
+ 
+These contains enough amount of data to learn about most interesting things on hadoop like large scale classification,clustering etc.
+1.6k Views · 4 Upvotes · Answer requested by Nirbhay Kekre
+Rahul Tandon
+Rahul Tandon
+Answered Apr 4
+Originally Answered: How can I learn more about big data?
+With inadvertent growth in the corporate world, humongous amounts of data are generated every day. Whether it is the huge industries or the small organisations, voluminous data is generated on a day-to-day basis. Complex data forms that when sorted and grouped reveal patterns, trends, and associations, especially relating to human behaviour and interactions. This, in technical language, is known as big data and hadoop is the key to it. This data can be structured, unstructured or semi-structured.
+
+Big data and hadoop have been an ideal combination. With local computation and storage offered, the software has been designed keeping in mind the necessity of scaling up a single server to a thousand machines. Big data and Hadoop go hand in hand.
+
+Big data and hadoop is also resilient to failure which is a big advantage as it enables fault tolerance by making multiple copies in different nodes. Cost effective, flexible and a highly scalable storage platform, Big data and Hadoop has become an integral part of the corporate world. Let’s say, just like Robin is to Batman such is Hadoop to Big data. Hence, there is an inadvertent need of well-equipment of the professionals to the skills of Big data and Hadoop data engine in order to grow and be competent in the modern corporate circle.
+
+If you want to learn more about Big Data then I will suggest to visit- Big Data and Hadoop. Here from you get many more valuable information which will definitely helpful to you.
+285 Views
+Rajeev Pratap Singh
+Rajeev Pratap Singh, studied at Indian Institutes of Information Technology
+Answered May 20, 2015
+Originally Answered: How do I learn about big data?
+Big Data is a collection of technologies, ranging from programming techniques to frameworks. Big Data is a broader term which includes a variety of frameworks for different tasks. Before exploring any framework you need to know the domain to which it is applicable and the scenarios in which it could be used. There is a nice article Big Data Frameworks every programmer should know - CodoPhile that introduces main frameworks of Big Data platform with their usecase scenarios.
+952 Views · 6 Upvotes
+Jamil Bashir
+Jamil Bashir
+Answered Jul 1, 2014
+Originally Answered: How do I learn about Big Data?
+Udacity has a nice courses for Data Science. It could be an excellent resource for learning Big Data.
+
+"Learn data science from industry experts at Facebook, Cloudera, MongoDB,  Georgia Tech, and more. We offer courses in data science where you’ll  learn to solve data-rich problems and apply this knowledge to your big  data needs. Whether you’re new to the field or looking for additional  training, we have introductory, advanced, and industry-specific courses  to meet your learning goals." Course Catalog for Online Classes
+831 Views · 1 Upvote
+Diya Sharma
+Diya Sharma, Software Developer
+Answered Sep 5
+I ensure that Big data will be in boom in Future.
+
+So what is big data ?
+
+Its a data in a large volume both structured and unstructured. Large scale industries and IT companies need to manage all their data, so by BIG DATA we can arrange it easily even it is in large volume.
+
+So the best Institute I prefer to join in Bangalore for Big data or Hadoop Training is People-Click. They are giving 100% placements and all the faculties are excellent. contact here - 8867636114
+205 Views
+Sachin Mathur
+Sachin Mathur, Big Data Analyst at Cognizant since 2012
+Answered Feb 17, 2016
+
+Big Data analytics allows you to personalize the content or look and feel of your website in real time to suit each consumer entering your website, depending on, for instance, their sex, nationality or from where they ended up on your site. The best-known example is probably offering tailored recommendations: Amazon’s use of real-time, item-based, collaborative filtering (IBCF) to fuel its ‛Frequently bought together’ and ‛Customers who bought this item also bought’ features or Big Data Courses on Intellipaat  LinkedIn suggesting ‛People you may know’ or ‛Companies you may want to follow’. And the approach works: Amazon generates about 20% more revenue via this method.
+
+Big Data can also help you understand how others perceive your products so that you can adapt them, or your marketing, if need be. Analysis of unstructured social media text allows you to uncover the sentiments of your customers and even segment those in different geographical locations or among different demographic groups.
+
+On top of that, Big Data lets you test thousands of different variations of computer-aided designs in the blink of an eye so that you can check how minor changes in, for instance, material affect costs, lead times and performance. You can then raise the efficiency of the production process accordingly.
+
+SCALE.
+
+With big data you want to be able to scale very rapidly and elastically. Whenever and wherever you want. Across multiple data centers and the cloud if need be. You can scale up to the heavens or shard till the cows come home with your father’s relational database systems and never get there. And most No SQL solutions like MongoDB or HBase have their own scaling limitations.....
+
+PERFORMANCE.
+
+In an online world where nanosecond delays can cost you sales, big data must move at extremely high velocities no matter how much you scale or what workloads your database must perform. The data handling hoops of RDBMS and most NoSQL solutions put a serious drag on performance..........
+
+CONTINUOUS AVAILABILITY.
+
+When you rely on big data to feed your essential, revenue-generating 24/7 business applications, even high availability is not high enough. Your data can never go down. A certain amount of downtime is built-in to RDBMS and other NoSQL systems..........
+
+WORKLOAD DIVERSITY.
+
+Big data comes in all shapes, colors and sizes. Rigid schemas have no place here; instead you need a more flexible design. You want your technology to fit your data, not the other way around. And you want to be able to do more with all of that data – perform transactions in real-time, run analytics just as fast and find anything you want in an instant from oceans of data, no matter what from that data may take.
+
+DATA SECURITY.
+
+Big data carries some big risks when it contains credit card data, personal ID information and other sensitive assets. Most NoSQL big data platforms have few if any security mechanisms in place to safeguard your big data.
+
+MANAGEABILITY.
+
+Staying ahead of big data using RDBMS technology is a costly, time-consuming and often futile endeavor. And most NoSQL solutions are plagued by operational complexity and arcane configurations.
+
+COST.
+
+Meeting even one of the challenges presented here with RDBMS or even most NoSQL solutions can cost a pretty penny. Doing big data the right way doesn’t have to break the bank.
+718 Views · 6 Upvotes
+Johny Das
+Johny Das, Data Scientist | Passionate about Big Data, Analytics & Data Science
+Answered Jul 13, 2016
+In order to learn Big Data you must be curious, skeptical, intellectual and must be really good in statistics. These are a few prime qualities required to learn Big Data. Apart from these you need to acquire a set of skills and some hands-on experience in real-world projects. These are the skills you need to learn:
+
+Hadoop framework – It is a must to master the Hadoop framework’s concepts and also it’s deployment.
+MapReduce programs – You should be an expert in writing complex MapReduce programs.
+Flume & Apachie Oozie – You must acquire an in-depth understanding of the Hadoop ecosystem using these services:
+Flume - it is a framework for populating Hadoop with data
+Apachie Oozie – it is a workflow processing system that lets users define a series of jobs written in multiple languages
+Pig & Hive – You must learn to perform data analytics using these
+Pig – it is a Hadoop-based language developed by Yahoo
+Hive - it is a Hadoop-based data warehousing-like framework
+You also need to acquire knowledge of a few advanced Hadoop concepts like – Hbase, Zookeeper, and Scoop.
+But to be job ready and to actually reinforce your learning, it’s a must to gain some hands-on experience on real-life industry-based projects. I completely agree with @ChrisSchrader and it’s true that the best way to learn anything is to actually do it.
+
+According to me, the easiest way to learn Big Data is by enrolling yourself in an online course. There are plenty of course providers out there offering some good courses with highly qualified trainers. Of the ones I sampled, I think Simplilearn’s Big-Data and Hadoop Developer Certification Training does a great job of capturing the essence of the field with solid, comprehensive course content. You could also check out Cloudera’s and Coursera’s Big Data catalogs.
+473 Views · 1 Upvote
+Anonymous
+Anonymous
+Answered Sep 26, 2016
+big data analytics is to help companies make more informed business decisions by enabling DATA Scientist, predictive modelers and other analytics professionals to analyze large volumes of transaction data, as well as other forms of data that may be untapped by conventional business intelligence(BI) programs. That could include Web server logs and Internet Click Big Data Planet Click Here Stream data, social media content and social network activity reports, text from customer emails and survey responses, mobile-phone call detail records and machine data captured by sensors connected to the INTERNET Things Some people exclusively associate big data with semi-structured and un structed Data of that sort, but consulting firms like Gartner Inc. and Forrester Research Inc. also consider transactions and other structured data to be valid components of big data analytics applications.
+
+Big data can be analyzed with the software tools commonly used as part of Advance Analytics disciplines such as Predective Analysis Data Mining, Text Analytics and Statical Method. Mainstream BI software and Visualization tools can also play a role in the analysis process. But the semi-structured and unstructured data may not fit well in traditional Data Warehouse based on Relational Database. Furthermore, data warehouses may not be able to handle the processing demands posed by sets of big data that need to be updated frequently or even continually -- for example, real-time data on the performance of mobile applications or of oil and gas pipelines. As a result, many organizations looking to collect, process and analyze big data have turned to a newer class of technologies that includes Hadoop and related tools such as Yarn Spook, Spark, and Pig as well as No Sql databases. Those technologies form the core of an open source software framework that supports the processing of large and diverse data sets across clustered systems.
+
+In some cases, Hadoop Cluster and No SQL systems are being used as landing pads and staging areas for data before it gets loaded into a data warehouse for analysis, often in a summarized form that is more conducive to relational structures. Increasingly though, big data vendors are pushing the concept of a Hadoop Data Take that serves as the central repository for an organization's incoming streams of Raw Data. In such architectures, subsets of the data can then be filtered for analysis in data warehouses and Analytics Databases, or it can be analyzed directly in Hadoop using batch query tools, stream processing software and Sql AND Hdoop technologies that run interactive, ad hoc queries written in Sql Potential pitfalls that can trip up organizations on big data analytics initiatives include a lack of internal analytics skills and the high cost of hiring experienced analytics professionals. The amount of information that's typically involved, and its variety, can also cause data management headaches, including Data Quality and consistency issues. In addition, integrating Hadoop systems and data warehouses can be a challenge, although various vendors now offer software connectors between Hadoop and relational databases, as well as other data integration tools with big data capabilities.
+232 Views
+Anonymous
+Anonymous
+Answered Sep 23, 2016
+How To Learn Big Data - For Free!
+
+There are expected to be 4.4 million big data jobs by 2015 in governments and every sector of industry. Combine this with a shortage of people trained to carry out the analysis needed (predicted to be nearly 200,000 by 2018) and depending on your point of view you have either a lot of unfilled vacancies, or a lucrative career ahead of you.
+
+But won’t you need a degree and relevant experience? Well, possibly. Not everyone can afford to spend years going back to college and retraining, but there are alternatives.
+
+Increasingly colleges and universities are putting courses online where they can be studied for free. You may not get a degree at the end, but that might not be important. IBM big data evangelist James Kobielus said in 2013 “academic credentials are important but not necessary for high-quality data science. The core aptitudes – curiosity, intellectual agility, statistical fluency, research stamina, scientific rigor, skeptical nature – that distinguish the best data scientists are widely distributed throughout the population.”
+
+Some of the courses do offer certificates of completion or other forms of accreditation, which can certainly go on your CV to impress potential employers.
+
+Of course if you’re not in the employment market – say you run your own business – then these are valuable purely for the knowledge they can give you. There’s no reason that a reasonably competent person couldn’t use that knowledge to launch their own data strategy and reap insights, whatever their business. I would love to hear in the comments section if anyone has done this.
+
+Here’s an overview of what’s available online from various schools, colleges and universities:
+
+The University of Washington’s Introduction to Data Science is available online at Coursera – a huge repository of online learning. 
+The course can be completed in 8 weeks if you put in 10 to 12 hours’ study per week, and covers the history of data science, key techniques and technologies such as MapReduce and Hadoop as well as traditional relational databases, designing experiments using statistical modeling, and visualizing results.
+
+Some basic programming knowledge is needed, but don’t worry there are plenty of free courses where you can pick that up too, if you don’t already have it (see below).
+
+Coursera’s courses usually run between set dates – if you want accreditation or certificates, you have to register before a set date and complete them before a final deadline. However if you are just interested in the knowledge, you can download all the course materials – which come as videos and reading material – to browse at your leisure.
+
+Harvard also makes its Data Science course available for free online. All lectures are uploaded as videos shortly after they take place, and materials and homework assignments are uploaded to the open source knowledge repository Github.
+
+This course covers what it calls the key facets of a big data investigation: Data wrangling, management, exploratory analysis, prediction and communication of results. Some basic Python knowledge is required.
+
+A familiarity with the basic concepts of statistics is fundamental to big data analysis. You can learn them from Stanford’s course Statistics One, also on Coursera.
+
+The course assumes very little background knowledge and describes itself as “a comprehensive yet friendly” introduction to the subject. It is also designed to work as a refresher for anyone who may have studied it at school or college in the past but let themselves get a bit rusty on the fundamentals!
+
+Those looking for slightly more in-depth or specialist knowledge may be interested in Stanford’s Algorithms: Design and Analysis course. Programming knowledge is essential – you will be expected to know at least one language, i.e C, Java or Python.
+
+The course covers the fundamental principles behind algorithmic design – design paradigms, randomized algorithms and probability, graph algorithms and data structures.
+
+Speaking of programming, a basic level of familiarity with at least one language is recommended for anyone interested in data. Python is a good choice, as it is designed for very fast processing of very large datasets, and is widely used in big data enterprise. Codeacademy.com , Coursera.org and MIT all offer free courses in Python designed for absolute beginners with no programming experience.
+
+If you’re interested in machine learning – the fast growing field of creating self-learning algorithms that can adapt themselves based on data with no human input – there are courses for that too.
+
+The California Institute of Technology’s Learning from Data course includes all of the lectures uploaded to Youtube and iTunes for convenience. It’s one for those who already have some academic background in computer science and are looking to move into a field where a lot of exciting breakthroughs are being made.
+
+Visualization is key to gaining insights from data. Graphs, charts and other far more creative techniques are employed to help us spot patterns hidden in mountains of numbers or unstructured data. UC Berkeley makes its Visualizationcourse available for free online, which can teach you techniques and algorithms used to create effective and well-designed graphical representations of data. You will need some familiarity with one popular graphics API (such as OpenGL or GDI+) as well as one data application (Excel will do). Whichever you choose is up to you as the assignments can be submitted in any format.
+
+Here you have it, you can learn all about Big Data for free – so no more excuses!
+
+Source: https://www.linkedin.com/pulse/h...
+264 Views
+Abhishek Agarwal
+Abhishek Agarwal, Big Data and Hadoop Learner!
+Answered May 22
+Big Data is indeed the most promising and fastest growing field in the technological domain. Through most careful analysis of current trends and future potential, we have realised and determined that the most relevant course on Big Data domain will be that covers both Hadoop & Spark -- and such a course must be accompanied by facility of access to a cloud lab of cluster of computers where the students can gain hands-on practical experience to all the technologies.
+
+I would recommend CloudxLab.com for online courses on Big Data.
+
+CloudxLab offers two types of courses on Big Data with Hadoop & Spark:
+
+1. Self-Paced Learning (Learning videos with Lab, Support & Certificate). Enroll Now!
+
+2. Instructor-led Learning(Learning videos with Lab, Support, Certificate and 40+ hours of live instructor-led sessions) . Enroll Now!
+
+What It Includes
+
+Learning Videos
+Instant Assessments, Quizzes, Assignments
+90 Days Access To CloudxLab
+Real Life Project
+Social Media Compatible Certificate
+24x7 Online Expert Support
+Lifetime Access To Course Material
+Optional: 1:1 Mentoring
+201 Views
+Ron Warshawsky
+Ron Warshawsky, Startup executive and database expert
+Answered Dec 22, 2013
+Originally Answered: What are some introductory-level articles to understand Big Data?
+As a started I would suggest to look into O'Reilly publications and articles, for example:
+
+Now available: “Planning for Big Data”
+
+Big Data Now: 2012 Edition
+884 Views · Answer requested by Varun Upadhyay
+Johnowens Mentoring
+Johnowens Mentoring
+Answered Thu
+
+There are different types of Big Data Courses that helps you to learn about big data. You can join different training courses that helps you to have a deep technical knowledge about big data.
+
+The training classes will teach you about the basic of big data and also imparts knowledge about different types of file formats to work with.
+
+
+After the training you can become an expert and impart your knowledge to others as well. You can also gain knowledge from the web. There are many web tutorials available on the internet websites that helps you to become a big data expert.
+
+
+The findings of both the reports clearly suggest that market for big data analytics is growing worldwide at a huge rate. This growth clearly benefits the IT industry. I have also done big data course and now working n this field only.
+49 Views · 1 Upvote
+Utkarsh Apoorva
+Utkarsh Apoorva, Cofounder and CEO, Augment
+Answered Apr 26, 2013
+Originally Answered: How do I learn about big data?
+Big data is actually a buzzword and includes a lot of Mathematical and Computations topics within it. Here is a minor breakup of what you may expect and the sources. I have a bias towards Python, which has emerged as the language of choice for most Big Data applications.
+
+Computer Science: 
+Machine Learning – There are libraries out there which can help you implement the core algorithms. The key one is scikit-learn (scikit-learn: machine learning in Python). It is really good place to start crunching data. It is written in Python.
+
+Natural Language Processing – Python has a pretty neat implementation of NLP called NLTK (Natural Language Toolkit). 
+
+Programming Paradigm: 
+MapReduce: It is programming paradigm which parallelises any computational task. You can check out the original Google Paper (Page on Usenix).
+MapReduce is essentially at the heart of Big Data. You can implement Hadoop MapReduce. However, if you are just starting out, you may want to implement MinceMeat, a lightweight and simple Python implementation of MapReduce. 
+
+Databases: 
+There are many no-sql databases out there that can be used like MongoDB, HBase.
+
+A simple BigData application will not be very difficult to implement, for the hacking minded. Check out how this marketer-hacker implemented Logistic Regression to find Spam-linking: (Machine Learning and Link Spam: My Brush With Insanity)
+
+There are also many courses on Coursera and Advance Your Education With Free College Courses Online to study Big Data and Artificial Intelligence.
+
+All the best.
+4.7k Views · 8 Upvotes
+Rupak Krishna
+Rupak Krishna, B.Tech. Computer Science & Data Science, Jaypee University of Engineering and Technology (2018)
+Answered Aug 1
+Well, My friend I have been in this field from 2 years and what i learned that it is not a easy task(but also not a difficult one).You have to work hard and learn a lot.
+
+Try to learn from Udacity(free courses) or try to look to other websites like coursera, EDX(recommended) and you can also learn by paying some decent amount of money from Edureka(recommended), Smplilearn, Apache Hadoop training from Cloudera University (highly recommended).
+
+But first , start step by step :
+
+Try to Know what is Big data and Hadoop and why companies need Hadoop people.
+Understanding Hadoop Components (mapreduce, hive, pig, sqoop, impala, oozie…). Get a basic introduction of Hadoop Components.
+Understanding Hadoop Architecture. How it works ?
+You can also prefer some introductory videos of Hadoop (freely available). Just try to get inside of Hadoop.
+Try to know Hadoop Distributed File System (HDFS)(Have a basic Theortical knowledge on this). This is the most important part.(If you have completed these steps, well my friend you are into Hadoop).
+Download Cloudera VM (freely available on Cloudera). Steps to install, all are given on cloudera.
+Understanding Map reduce(important). If you are good in coding(prefer Java, python). You can do a lot in Map reduce.(This area is for Developers But Everyone should know how it works)
+Next Step, Apache Hive. If you are good in SQL . This part is become a lot easier for you (Mainly for Analytics).
+Apache Pig . This is also similar to SQL. Mainly used for Data preparation, Data Correction . Also Used For Analytics.
+Sqoop(Important). Used for transferring data b/w hadoop and RDMS.
+There are also more components other than these above in Hadoop.
+
+But those are enough for learning. I prefer that you should first try to learn those above mentioned.
+
+Hope my answer is useful !
+
+Study Hard my friend !
+
+If you have any queries or problem regarding this:
+
+you can contact me : rupakkrishna28@gmail.com
+81 Views · 1 Upvote
+Satyam Kumar
+Satyam Kumar, Hadoop Developer at Acadgild
+Answered Feb 10, 2016
+To learn Big Data you need to be aware with at least some object oriented programming language like Java or scripting language like Python.
+
+Knowledge of these languages will help you to work on unstructured data and regarding structured and semi structured data Hadoop has Pig and hive which runs on MapReduce  which is quite easier to code when compared to Java or python.
+
+If you are from non coding background you can easily start working on Pig and Hive.
+
+Knowledge of hadoop will also help in getting hold on new poster boy of big data i.e Spark as it also supports real time streaming and it is many times faster than hadoop map-reduce.
+
+You can start learning Hadoop as the first step to step into the world of Big Data.
+
+Have look on the below blogs regarding Job Opportunities in BigData in 2016 and upcoming years.
+
+Big Data Job Opportunities In 2016 And The Coming Years
+
+Satyam Kumar| Hadoop Developer at Acadgild
+
+Learn ,Do and Earn at www.acadgild.com
+
+376 Views · 4 Upvotes
+Nitin
+Nitin, Business Analyst with over 3 years of experience
+Answered Sep 27, 2016
+Business Analyst/ Data Science/ Decision Scientist etc. are words which describes a new job opportunity in today’s era. No wonder it’s called the sexiest job of 21st Century.
+The world has now turned into a digital work space. We have data all around us and a person who can use this data to provide a better insight is called a data science/ Business analyst. This profile has been suggested as the hottest profile for the next 5-6 decades.
+With the arrival of Internet Of Things(I.O.T), this domain is bound to get a huge leap.
+The data science job is clearly a winner here. 
+ Major tools and Technology in this field are – R, SAS, SQL Python, Hadoop, Hive, Tableau, etc. 
+ Now to help the new engineers from India and across the world we present you the top 3 books which are presently in one of the 3 best sellers in the category.
+ 1. 100 Questions to crack business analyst interview
+ https://www.amazon.in/Questions-...
+2.100 Questions to learn R in 6 hours 
+ https://www.amazon.in/100-Questi...
+ 3. 112 Question to crack Business Analyst Interview using SQL
+ https://www.amazon.in/Questions-...
+ 
+ For more information you can visit thedatamonk, obviously a com with it.
+237 Views · 3 Upvotes
+Gaurav Kumar
+Gaurav Kumar
+Answered Mar 2
+
+MindsMapped offers instructor-led online Hadoop training to IT and NON-IT professionals. MindsMapped’s online training covers most of the key topics of Big Data and Hadoop including Introduction to Big Data and Hadoop, Hadoop cluster, MapReduce, Pig, Hive, HBase, ZooKeeper, Oozie, Sqoop, and Yarn. Within this online training, stress is given more on job-based works. Hence, this training helps you to get job ready.
+
+Benefits of Online Big Data Hadoop Training:
+
+· MindsMapped’s instructor-led online training assists college graduates and IT professionals to easily understand topics of Big Data and Hadoop.
+
+· Trainers will be sharing their years of experience with you.
+
+· Here you will get access to knowledge base study material that can help you in getting Hadoop professional certifications including Cloudera, Hortonworks, and MapR.
+
+· Along with online classes, you get a chance to work on real-time project along with our instructors.
+
+· Instructors conduct classes in easy to understand manner.
+
+· Mock Hadoop interviews are conducted to prepare you for interviews.
+
+· You will also get assistance in preparing the resume which will get you hired by top employers.
+
+· Trainees are provided high-level tasks for better understanding about the topics
+
+· After completion of this training program you can easily pass any Hadoop job interviews or Hadoop certification exam
+
+After completion of Big Data and Hadoop tutorial classes, you can easily crack any job interview. For detailed knowledge about MindsMapped Online Hadoop training, mail at info@mindsmapped.com or calls us at +1 (435) 610-1777 / (385) 237-9777.
+116 Views
+Sander Duivestein
+Sander Duivestein, Trendwatcher New Media
+Answered Jan 20, 2011
+Originally Answered: How do I learn about big data?
+IBM has dedicated a complete website: The Decade of Smart, http://www.ibm.com/smarterplanet...
+Wired magazine has dedicated one magazines to Big Data. The End of Theory, http://www.wired.com/science/dis...
+Nature Vol. 455 of September 2008 was all about Big Data, http://www.nature.com/news/speci...
+O'Reilly, What is Data Science, http://radar.oreilly.com/2010/06...
+GigaOmPro, The Internet of Things, Anywhere, Anytime, Anything, http://pro.gigaom.com/2010/07/re...
+Also interesting is the first Big Data conference on the March 23 2011: http://event.gigaom.com/bigdata/
+
+And an interesting social daily newspaper about Big Data: http://paper.li/tag/bigdata/
+3.7k Views · 8 Upvotes
+Kshitiz Sethia
+Kshitiz Sethia
+Answered Jan 2, 2014
+Originally Answered: How do I start learning Big Data?
+A quick google could have sufficed, but I'll help you this time.
+
+List of big data MOOCs: http://www.mooc-list.com/tags/bi...
+
+The one I have studied (and recommend): https://www.coursera.org/course/...
+
+Others you might like: https://www.udacity.com/course/u...
+1.4k Views · 3 Upvotes
+Nischal Shetty
+Nischal Shetty, works at Google
+Answered Mar 4, 2015
+Originally Answered: How do I learn about big data?
+Big Data is a general term in data science.Most of the people these days are just hipping up big data without knowing its origin, which is nothing but the statistical analysis now in sync with computer languages which help us compute more data.
+
+So learning the basic statistics functions and methods of their outcomes is very important if you want to succeed in the analytics world. 
+
+My suggestion to start of with:
+
+1)You can always go for the open source  softwares like R and also use a free platform called treasurehunt by Treasure Hunt
+763 Views · 2 Upvotes
+Jose Davis
+Jose Davis, Chief Executive Officer
+Answered Feb 24
+There are expected to be 4.4 million big data jobs by 2015 in governments and every sector of industry. Combine this with a shortage of people trained to carry out the analysis needed (predicted to be nearly 200,000 by 2018) and depending on your point of view you have either a lot of unfilled vacancies, or a lucrative career ahead of you.
+
+But won’t you need a degree and relevant experience? Well, possibly. Not everyone can afford to spend years going back to college and retraining, but there are alternatives.
+
+Increasingly colleges and universities are putting courses online where they can be studied for free. You may not get a degree at the end, but that might not be important. IBM big data evangelist James Kobielus said in 2013 “academic credentials are important but not necessary for high-quality data science. The core aptitudes – curiosity, intellectual agility, statistical fluency, research stamina, scientific rigor, skeptical nature – that distinguish the best data scientists are widely distributed throughout the population.”
+117 Views
+DREG
+DREG
+Answered Sep 15, 2015
+Originally Answered: How do I learn about big data?
+Experfy has an amazing blog about Big Data. The blog will provide you with insight, techniques, best tools, and case studies. Enjoy!
+
+Big Data and Analytics Blog - Experfy Insights
+428 Views · 6 Upvotes
+Charan Puneet Singh
+Charan Puneet Singh, Analyst
+Answered Dec 21, 2013
+Originally Answered: What are some introductory-level articles to understand Big Data?
+Big Data Now: Current Perspectives from O'Reilly Radar
+
+A lucidly written book to give you a solid background on Big Data.
+
+http://www.mckinsey.com/insights/business_technology/big_data_the_next_frontier_for_innovation
+
+McKinsey cuts through crap and tells you where and how companies can use Big Data.
+
+Wikibon Big Data Research and Analysis
+
+Wikibon is a collaborative research wiki tracking everything related to the Big Data. Relevant from market size, vendor landscape, technology landscape, market share etc.
+2.2k Views · 4 Upvotes · Answer requested by Varun Upadhyay
+Jack Ramon
+Jack Ramon, Technical Writer and Consultant with 10+ years experience
+Answered May 26
+There are many free tutorial websites where you can learn by yourself but if you want assistance from industry professionals then you should join JanBask Training,where you can choose you batch timing according to you.
+
+JanBask Training is the best online training institute which offers you the Hadoop Training. If you want to get the best Hadoop Training then you should reach experts of JanBask Training. They provide you the high end training with project support from the best SAP consultant. You will get a best placement assistance from consultants.
+
+If you are seriously interested in learning Hadoop, there is an institute as JanBask Training, they will provide you exclusive training on Hadoop technology along with certification with job assistance too.
+
+For more details you can get registered here for Online Hadoop Big Data Analytics Training Certification Course
+106 Views · 1 Upvote
+Tú Phạm
+Tú Phạm, Google Cloud Expert
+Answered Aug 6, 2014
+Originally Answered: What are some good sources to learn about big data?
+Page on bigdatauniversity.com
+Big Data
+Cloudera Developer Blog
+Hortonworks Blog
+...
+Of course, google for more :)
+988 Views · 2 Upvotes · Answer requested by Nirbhay Kekre
+Chiranjeevi Chittala
+Chiranjeevi Chittala, I love Bigdata :)
+Answered May 23, 2016
+I would recommend CBT nuggets ( Apache Hadoop - Hadoop Course Introduction ) course named Apache Hadoop. It gives a perfect overview of Big data and Hadoop. Once you get basics frome here, then you are on your own with multiple advanced resources.
+
+Big data university - Big Data University | Data Science Courses
+
+Coursera - Coursera - Free Online Courses From Top Universities | Coursera
+
+Edx - edX
+
+etc.,
+
+Good Luck.
+269 Views · Answer requested by Trilok Reddy
+Kalyan Ramanuja
+Kalyan Ramanuja, Data Science Passionater
+Answered Jun 17, 2015
+Learning BigData is a extensive idea to comeup with. Other side, Its pain in the ass even. You could find many online tutorials that fullfills it. http://udacity.com and video lectures by Professor Tina. and http://udemy.com and lectures of Prof. Jorge and you can also refer http://coursera.org .
+
+These are the most populated online tutorial services. Cheers.
+635 Views · Answer requested by Kirtan Mehta
+Rachana Baldania
+Rachana Baldania, I am working as a Data Analys till last 1 year
+Answered Sep 16, 2016
+Originally Answered: What are the perquisites to learn big data?
+When its about big data than i will suggest you to strong your SQL and PLSQL,
+
+Basics of Data Warehousing,
+
+Basics of Data Mining,
+
+DW/DM Modelings (which is also cover in Basics),
+
+and
+
+You Should be strong in Programming Language like Python,R,Java(Specially Spark),etc.
+142 Views
+Eshika Roy
+Eshika Roy, Hacktivist
+Answered Jul 1
+The best way to learn Big Data is by enrolling in an intensive Big Data Hadoop certification in gurgaon. To learn data science and excel on the budding field of technology, DexLab Analytics is the key. It offers a superior and reliable platform for those who want to pursue a career in data analytics. With seasoned industry experts in panel and innovative infrastructure, DexLab is surely the best place to give your career a powerful boost to success.
+
+Visit their official site today and glance through all the courses they offer. Hope you get what you are looking for!
+87 Views · 1 Upvote
+Yashashree Hardikar
+Yashashree Hardikar, Data Science and Big Data Advisor at Aegis School of Business & Telecommunication (2016-present)
+Answered Jan 17
+Aegis Post Graduate Program in Data Science, Business Analytics and Big Data in association with IBM. Executive program includes three delivery modes: Full Time, Executive Weekend & Executive Online.
+ 
+ Full Time Post Graduate Program is in Mumbai.
+ 
+ Executive Weekend is available in Mumbai, Pune & Bangalore. Participants having more than 2 years of experience and not belonging to any of these cities can go for Executive Online Program.
+ 
+ Aegis is one of the best institutes in India in Analytics/Data Science. It is ranked among the top 10 institutions in India.
+ 
+ Some of the best features of this program are listed below:
+ 
+ Final PGP certificate will be issued by Aegis and IBM Jointly.
+ The Program is designed and delivered jointly by IBM and Aegis School of Data Science.
+ Exposure to live projects from Industry
+ The best and only PGP in Data Science in India
+ Program delivered by IBM subject matter experts and best Data Scientists
+ Career Management Center to assist you in career change and finding suitable opportunities.
+ IBM Business Analytics Lab
+ Globally acceptable Credit Structure
+ Click here to know more about this program:
+ 
+ Full Time: http://goo.gl/7veAon
+ Executive Weekend Mode: http://goo.gl/I9J3r5
+ Executive Online Mode: http://goo.gl/jX7r70
+166 Views
+Yashashree Hardikar
+Yashashree Hardikar, Data Science and Big Data Advisor at Aegis School of Business & Telecommunication (2016-present)
+Answered Mar 30
+Big data is a term that describes the large volume of data – both structured and unstructured – that inundates a business on a day-to-day basis. But it’s not the amount of data that’s important. It’s what organisations do with the data that matters. Big data can be analysed for insights that lead to better decisions and strategic business moves.
+
+While the term “big data” is relatively new, the act of gathering and storing large amounts of information for eventual analysis is ages old. The amount of data that’s being created and stored on a global level is almost inconceivable, and it just keeps growing. That means there’s even more potential to glean key insights from business information – yet only a small percentage of data is actually analysed. What does that mean for businesses? How can they make better use of the raw information that flows into their organisations every day? How is the data analysed? What are the technologies used? How are the insights drawn?
+
+Get mastery in Big Data, Data Science and Business Analytics by joining Aegis School Of Data Science - Full Time Post Graduate Program in Data Science, Business Analytics and Big Data, Executive Weekend Post Graduate Program in Data Science, Business Analytics and Big Data or Executive Online Post Graduate Program in Data Science, Business Analytics and Big Data.
+
+Also see a detailed comparison between various institutes and Aegis School of Data Science.
+
+Make a wise decision!
+124 Views · 1 Upvote
+EZ Certifications
+EZ Certifications
+Answered Jun 23, 2016
+Well, this is a big question that seeks for a big answer. We all know, there is this general fear about big data among the upcoming data communities. But, hold on. Don’t fall and faint. Frankly speaking, BIG DATA is just another subject although it’s picking up relatively fast. And looking at the cloud of data that is being generated by the analytics companies daily, it is the most fast selling at the moment. It’s expected that the world will definitely see a dearth of data scientists in the near future.
+
+The best way to learn BIG DATA is to understand it first and check out the right platforms which are being used to crunch this big issue of unstructured data floating the market today. Big data systems are popular for processing huge amounts of unstructured data from multiple data sources. Most open source vendors like Cloudera and Hortonworks maximize on the use of Hadoop extensively. So that’s it. Hadoop is your next call. If you master the concept and software such as Hadoop you graduate the big data expert level without fail.
+The main feature of Hadoop that you have to target is MapReduce feature. Moving data over a network can be very, very slow, especially for really large data sets. If you're opening a really massive file on your device or system, it can take forever. It takes much longer than if it's a short, tiny file. So rather than move the data to the software, MapReduce moves the processing software to the data.
+The second next feature is the Hadoop Distributed File System. Hadoop consumes data in HDFS - an implementation inspired by the Google File System (GFS) to store files across a bunch of machines when it's too big for one. Hadoop Sqoop and Hadoop Flume are the two tools in Hadoop which is used to gather data from different sources and load them into HDFS.
+Then comes understanding the data services or ETL tools like Flume and Sqoop. Where Sqoop imports/copies data quickly (between Hadoop and other databases) and parallelizes data transfer for performance, you can rely on Flume for all kind of data transaction, be it distributed data collection or aggregation, available on any backup routes.
+Next important thing that comes is Big Data Analyics using Hadoop components like PIG and Sqoop, which sits on top of Apache Hadoop module, and provide higher-level language to use Hadoop’s MapReduce library. For prototyping and rapidly developing MapReduce-based jobs, Pig is excellent, whereas Hive offers SQL like queries for Hadoop.
+ezCertifications is a platform where we provide cutting edge certification courses to working professionals across all the English-speaking world. We hire people with a knack for chasing Research and Information on anything under the sun. We engage experts who have extensive industry knowledge and have a clear idea of the market trends. We have webinars under the dynamic domain where the participants are from various interests. The right e-learning methods is the core to what we do at ezCertifications and its database is not something which any layman or mid-level entrant can actually handle. We are also planning to launch live sessions on business topics for experienced and senior professionals.
+
+For any further queries feel free to buzz us at 1 866 438 0220 (toll free)
+
+Visit: Professional Certification Courses | Online and Classroom training | ezCertifications
+275 Views · 1 Upvote
+Anonymous
+Anonymous
+Answered Oct 10, 2015
+Originally Answered: How do I learn about big data?
+Here are some resources:
+
+Big data blogs & Tutorials: Hadoop Tutorial, Apache Hadoop Tutorial, Hadoop Course, Hadoop Course Content
+
+Big Data MOOCs: Udemy: Online Courses Anytime, Anywhere
+
+Big Data Live, Instructor-led courses: Instructor Led Online Courses with 24x7 On-Demand Support | Edureka
+618 Views · 4 Upvotes
+Jennifer Diaferio
+Jennifer Diaferio, Baylor grad, semi-native Texan residing in Chicago, loves traveling and my dog, Summer. Lead Marketing Spec...
+Answered Aug 28, 2013
+Originally Answered: How do I learn about big data?
+For those of you who follow big data and politics, you may know this but big data was used pretty heavily in the presidential elections in 2012. We run a meetup event in Chicago and several of the key developers behind the Obama for America campaign will be speaking about their role of transforming big data into useable information to help the democrats re-elect President Obama. Here's a blog article written by one of the key developers, Gabriel Burt, about his time on the campaign:  Blog | Tech in Motion
+9.5k Views · 24 Upvotes
+Akmal Chaudhri
+Akmal Chaudhri, worked at DataStax
+Answered Jan 31, 2013
+Originally Answered: How do i start to learn about Big Data and No SQL?
+There is a wealth of great material on the slideshare web site.
+
+IBM also has a BigDataUniversity web site (I work for IBM and helped put together the intro for the Hadoop and Big Data course).
+
+Cloudera also has training resources and virtual machines for download from their web site.
+
+If you are interested in NoSQL datastores, two great web sites are:
+
+myNoSQL
+and
+NOSQL Databases
+
+HTH
+2.3k Views · 1 Upvote
+Sharon Maxwell
+Sharon Maxwell, Student at Delhi University at University of Delhi (2016-present)
+Answered May 15
+As per my suggestion, I would like to convey for choose the Big DATA Hadoop Training company. This is best way for learning quickly.
+
+You may choose the Online PDF.
+
+All the Best :)
+17 Views
+Abhishek Maurya
+Abhishek Maurya, Systems Engineer at TCS, Bibliophile, Tech Blogger
+Answered Apr 28, 2016
+Learning Big Data is a never ending process, as data is itself something which you can never stop generating. Other than the conventional knowledge of Big Data, the most important thing you need to do is to keep up with the trends of the changing industry. Attend lectures, events, etc. by credible speakers and polish your knowledge for the same. It is very important to make sure to stay upgraded. Look out for workshops, events around you, that will help building up the necessary base for you. For example, in India we have Big Data Summit organised by NASSCOM, which is a governing body of all software companies.
+135 Views
+William Emmanuel Yu
+William Emmanuel Yu, Chief Nerd. PHB and PHD.
+Answered Aug 9, 2014
+Originally Answered: What are some good sources to learn about big data?
+1. Check out free and publicly available datasets. Examples are Twitter and CAIDA (http://www.caida.org/data/). There are much more in the Internet. Even the Enron discovery files are made publicly available. So depends on what interests you.
+
+2. Work with a company that has a lot of data. Either try to get a job or internship. Companies have a lot of data that can benefit from processing. This also gives you access to people who can make sense of the data. Getting domain experts to help you is crucial in making sense of the data and output. You may want to intern in one of these.
+1.3k Views · 2 Upvotes · Answer requested by Nirbhay Kekre
+Andy Henry
+Andy Henry, Implemented a Hadoop Cluster on Raspberry Pis
+Answered Mar 9
+You already have great answers so I won't pad mine out.
+What I found useful to understand the technology was to implement a Big Data setup (Hadoop Cluster) using Raspberry Pi's. This was pretty easy and you can scale up by adding more Raspberry Pi boards. I used one Raspberry Pi and some Raspberry Zero boards. It let me quickly install HDS and set up Hadoop and Mad Reduce to see how things hang together and would scale.
+
+I'm not a programmer (just a practical hacker - in the good sense) so I think anyone could learn like this.
+
+I found a useful tutorial which shows you how to set this up:
+http://www.widriksson.com/raspbe...
+219 Views
+Sandeep Giri
+Sandeep Giri, worked with huge data @ CloudxLab, Amazon, InMobi, D.E.Shaw
+Answered Jul 26, 2016
+Looks like it has been answered by many people.
+
+Here is my approach to Know Big Data:
+
+Learning Big Data is basically learning about distributed computing. This video introduction should suffice.
+Basics of computing:
+Know how to measure complexity (time and space) of a program.
+Basics of sorting algorithms
+Learn The following components:
+HDFS - How to spread a file system to multiple computers.
+YARN - How does it execute the program on many computers
+Spark - How it simplifies the execution of workload by creating Resilient Distributed Dataset
+MapReduce - How to define the logic in term of Map & Reduce to solve sorting intensive works.
+Paxos Algorithm - Zookeeper & Mongodb’s architecture to understand the automatic election of master.
+NoSQL & Why it is not possible to have perfectly consistent big data base.
+Hbase - How to design data model’s for humongous storages/read/writes.
+Learn how to process un bounded datasets using Spark
+The full video lectures are available on youtube channel of knowbigdata.com
+Practice with CloudxLab.com - a very low cost subscription based pre-hosted cluster for learning Big Data.
+607 Views · 4 Upvotes
+Hunter McCord
+Hunter McCord, works at Amtrak
+Answered Dec 21, 2013
+Originally Answered: What are some introductory-level articles to understand Big Data?
+Here are some good articles/videos on Big Data
+
+Tutorial: Introduction to Big Data
+
+
+Big Data Explained Brilliantly in One Short Video
+2.7k Views · 3 Upvotes · Answer requested by Varun Upadhyay
+Matt Gratt
+Matt Gratt, Growth, Data, Revenue, History, Economics, Investing, Cookin
+Answered Mar 16, 2012
+Originally Answered: How do I learn about big data?
+I really like these blogs:
+http://www.bigdata.com/bigdata/b... 
+http://www.asterdata.com/blog/ 
+http://www.cloudera.com/blog/ 
+http://blog.revolutionanalytics....
+2.6k Views · 14 Upvotes
+Deepika Mishra
+Deepika Mishra
+Answered Oct 21, 2016
+There are expected to be 4.4 million big data jobs by 2015 in governments and every sector of industry. Combine this with a shortage of people trained to carry out the analysis needed (predicted to be nearly 200,000 by 2018) and depending on your point of view you have either a lot of unfilled vacancies, or a lucrative career ahead of you.Top 5 Big Data Hadoop Training in Delhi
+
+But won’t you need a degree and relevant experience? Well, possibly. Not everyone can afford to spend years going back to college and retraining, but there are alternatives.
+
+Increasingly colleges and universities are putting courses online where they can be studied for free. You may not get a degree at the end, but that might not be important. IBM big data evangelist James Top 5 Python Training Institutes In India Kobielus said in 2013 “academic credentials are important but not necessary for high-quality data science. The core aptitudes – curiosity, intellectual agility, statistical fluency, research stamina, scientific rigor, skeptical nature – that distinguish the best data
+236 Views
+Michael James Kali Galarnyk
+Michael James Kali Galarnyk, MS Data Science, University of California, San Diego (2017)
+Answered Jan 24, 2016
+I am a data science masters student at UC San Diego. I am posting my course material on my github. It should help you get acquainted with some of the basics. I would recommend learning python and generally speaking taking a lot of online courses would help
+
+mGalarnyk/DSE210_Probability_Statistics_Python
+
+mGalarnyk/DSE200_Python_for_Data_Analysis
+382 Views · 7 Upvotes
+Crystal Sullivan
+Crystal Sullivan, Social Media Listening Specialist @ SAS Software. Opinions are my own and do not represent SAS.
+Answered Jan 13, 2015
+Originally Answered: How do I learn about big data?
+If you're interested in learning more about what big data is, this resource may help! What Is Big Data?
+
+Let me know if you have any questions!
