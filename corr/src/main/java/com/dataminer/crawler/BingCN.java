@@ -6,6 +6,7 @@ import java.net.URLEncoder;
 import java.util.Collection;
 
 import org.apache.commons.lang.StringUtils;
+import org.apache.log4j.Logger;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -15,6 +16,7 @@ import com.dataminer.tfidf.ngram.NGram;
 import com.google.common.collect.Lists;
 
 public class BingCN {
+	private static final Logger LOG = Logger.getLogger(BingCN.class);
 	private static final String BING_URL = "http://www.bing.com/search?q=";
 
 	public static long getResultCount(String q) throws UnsupportedEncodingException, IOException {
@@ -33,8 +35,8 @@ public class BingCN {
 		for (Element e : eles) {
 			String header = e.select("h2").text();
 			String href = e.select("h2 > a").attr("href");
-			// System.out.println(header);
-			// System.out.println(href);
+			// LOG.debug(header);
+			// LOG.debug(href);
 		}
 	}
 
@@ -46,7 +48,7 @@ public class BingCN {
 		Element e = eles.first();
 		String header = e.select("h2").text();
 		String href = e.select("h2 > a").attr("href");
-		System.out.println(href);
+		LOG.debug(href);
 
 		String content = Jsoup.connect(href).get().text();
 		Collection<String> nGramTerms = NGram.ngramDocumentTerms(Lists.newArrayList(1, 2, 3), content);

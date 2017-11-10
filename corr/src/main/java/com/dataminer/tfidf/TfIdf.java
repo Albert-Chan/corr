@@ -1,8 +1,6 @@
 package com.dataminer.tfidf;
 
-import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -13,25 +11,27 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.stream.Stream;
 
 import org.apache.commons.lang.StringUtils;
+import org.apache.log4j.Logger;
 
 import com.dataminer.crawler.BingCN;
+import com.dataminer.keywords.KeywordsRecognizer;
 
 /**
  * Term frequency-Inverse document frequency
  */
 public class TfIdf {
-
+	private static final Logger LOG = Logger.getLogger(KeywordsRecognizer.class);
 	private static Map<String, Double> idfCache = new HashMap<String, Double>();
-	
+
 	public static Map<String, Double> getIdfs() {
 		return idfCache;
 	}
-	
-	static {
 
+	static {
 		try (Stream<String> stream = Files.lines(Paths.get("idf.txt"))) {
 			stream.filter(line -> line.length() > 0).forEach(line -> {
 				String[] pair = line.split(":::");
@@ -77,6 +77,26 @@ public class TfIdf {
 		 * Normalize by the vector elements added in quadrature
 		 */
 		COSINE
+	}
+
+	/**
+	 * Term frequency for a single document
+	 *
+	 * @param document
+	 *            bag of terms
+	 * @param type
+	 *            natural or logarithmic
+	 * @param <TERM>
+	 *            term type
+	 * @return map of terms to their term frequencies
+	 */
+	public static Map<String, Double> newtf(Map<String, Double> terms) {
+		Map<String, Double> tf = new HashMap<>();
+		for (Entry<String, Double> term : terms.entrySet()) {
+			String termAsKey = StringUtils.lowerCase(term.getKey());
+			tf.put(termAsKey, tf.getOrDefault(term, 0.0) + term.getValue());
+		}
+		return tf;
 	}
 
 	/**
@@ -193,8 +213,8 @@ public class TfIdf {
 		Map<String, Double> tfIdf = new HashMap<>();
 		for (String term : tf.keySet()) {
 			tfIdf.put(term, tf.get(term) * idf(term));
-
-			System.out.println(term + ":::" + tfIdf.get(term));
+			LOG.debug(term + "::idf::" + idf(term));
+			LOG.debug(term + "::tfidf::" + tfIdf.get(term));
 		}
 
 		return tfIdf;

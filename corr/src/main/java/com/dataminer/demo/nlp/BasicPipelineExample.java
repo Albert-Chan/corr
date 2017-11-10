@@ -1,4 +1,4 @@
-package com.dataminer.crawler;
+package com.dataminer.demo.nlp;
 
 import java.util.List;
 import java.util.Map;
@@ -54,6 +54,8 @@ public class BasicPipelineExample {
 				String pos = token.get(PartOfSpeechAnnotation.class);
 				// this is the NER label of the token
 				String ne = token.get(NamedEntityTagAnnotation.class);
+
+				System.out.println(word + ":" + pos + ":" + ne);
 			}
 
 			// this is the parse tree of the current sentence

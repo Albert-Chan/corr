@@ -7,6 +7,10 @@
 	<name>correlation</name>
 	<description>correlation</description>
 
+	<properties>
+		<lombok.version>1.16.18</lombok.version>
+	</properties>
+
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
 		<dependency>
@@ -101,6 +105,24 @@
 			<artifactId>hanlp</artifactId>
 			<version>portable-1.1.5</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>${lombok.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.7</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -153,6 +175,10 @@
 		<repository> <!-- for LZO -->
 			<id>cloudera</id>
 			<url>https://repository.cloudera.com/artifactory/cloudera-repos</url>
+		</repository>
+		<repository>
+			<id>projectlombok.org</id>
+			<url>http://projectlombok.org/mavenrepo</url>
 		</repository>
 	</repositories>
 
