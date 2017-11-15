@@ -1,296 +1,601 @@
-information assets:::5.5053315359323625
 stack:::4.653960350157523
+once you have your environment set up, get to coding!  there is plenty of documentation and tutorials out there to reference and learn from [2].  and really, just type questions into google and you'll get a ton of resources.  read up on the tools and understand how the technology can be applied to solving for your use case.  think about the kinds of metrics you're looking to capture within your data.  think about what kind of map-reduce programs you will need to write to capture the data you want to analyze.  think about how you can leverage something like hive or pig to do a lot of the heavy number crunching.  something that probably wont be apparent in a single node environment but is a real world problem in any distributed environment is understanding data skew and how it affects performance [3].:::22.3680708932178
 ability learn through trial/dev license:::4.736198448394496
 however unstructured data:::7.9105906122564775
-paper 1:::2.0794415416798357
-information assets characterized by such high volume:::5.198497031265826
+mapr - free hadoop on-demand training courses:::7.942717540573791
+[2]:::17.80372269557236
+436 upvotes albert wang:::8.648922962094131
+the algorithm design manual: steven s skiena: 8580001218441: amazon.com: books:::10.689601259598334
+view more answers:::5.723585101952381
+b.:::0.6931471805599453
+the developer exclusive job platform. companies must approach you with clear salary expectations.:::10.920202637237164
+these:::5.777652323222656
 free on-demand webinar:::4.787491742782046
 their docs section:::3.4011973816621555
-about big data:::6.942156705699469
-big data tutorials pig tutorial learning spark:::8.082402253926244
-sizes:::3.9318256327243257
-technology for its transformation:::2.70805020110221
 single node hadoop cluster:::8.503702601233739
 has described by 3vs:::4.02535169073515
+cs fundamentals:::6.942156705699469
 18 big data:::7.107425474110705
-has use since 1990s with credit for coining:::4.1588830833596715
+answered 239w ago:::5.093750200806762
+understanding:::5.955837369464831
 moving:::3.828641396489095
+359 · answer:::6.163314804034641
 you:::1.0986122886681098
 your data solution:::4.663439094112067
+promoted by honeypot.io:::6.163314804034641
 specific technology for its transformation into value:::4.0943445622221
 agreement:::3.58351893845611
+[3]:::3.4339872044851463
+lot learn:::7.706612913964197
 now should confident about overall working of hadoop:::4.110873864173311
+sox friend:::8.063692634269517
+welcome to hive!:::6.171700597410915
 has described:::2.833213344056216
+engineers:::5.986452005284438
+experfy:::13.284313845358453
+google:::17.868261213235026
 your use case:::2.6390573296152584
-data fusion machine learning:::5.84354441703136
 mapr to apache ™ hadoop ®:::9.116359308505288
-python class | python education | google developers coursera:::8.370084326378025
+after you have finished this start studying hadoop in general using http://hadoop.apache.org/ and their docs section: http://hadoop.apache.org/docs/cu.... if you want to know more about hdfs architechture read:http://archive.cloudera.com/cdh/...:::18.36073770605483
+bit about basic data processing:::9.568643988906736
+little bit about basic data processing:::6.6895992691789665
+yesno:::6.049733455231958
 http://hadoop.apache.org/:::9.793840083231597
 3:::0.0
+hdfs architecture guide - http://archive.cloudera.com/cdh/...:::10.806328236685879
 size:::2.4849066497880004
-concepts:::4.3694478524670215
 get into multi-node environments:::3.7612001156935624
 5:::0.6931471805599453
-cool kid:::2.0794415416798357
-updated 206w:::5.455321115357702
+then see the word-count source code at wordcount - hadoop wiki and try to understand it.:::12.396874806793718
+yesno 27.2 k views:::4.897839799950911
 r programming online course mit ocw:::6.52795791762255
-set of techniques with forms of integration:::3.713572066704308
+360 upvotes · answer requested by daniel h kim:::8.927977461002001
 set of techniques with new forms of integration:::3.970291913552122
+my suggestion:::3.332204510175204
 has use with giving credit:::2.302585092994046
+[4]:::3.58351893845611
+your environment:::4.736198448394496
 bi:::4.204692619390966
+download (mapr):::5.1298987149230735
+scalable machine learning and data mining:::10.048626318202366
 example:::3.5553480614894135
-pieces:::3.713572066704308
+works on big data updated:::6.100318952020064
 quora ask new question sign:::3.9318256327243257
-has use with credit to john mashey:::4.394449154672439
+coding:::6.318968113746434
 same:::3.332204510175204
-data science:::7.631916513071252
-computer science:::5.752572638825633
+ | google developers:::17.8141939871385
 specific technology for its transformation:::3.8066624897703196
+spark:::6.163314804034641
+quora:::6.78897174299217
+it.i:::6.152732694704104
 main focus:::10.48355001802591
+http://www-db.in.tum.de/research...:::7.529943370601589
+· careers:::4.343805421853684
 term:::3.4011973816621555
-get into environments:::4.51085950651685
-mechanism:::4.7535901911063645
-31:::1.791759469228055
+359 · answer requested below:::6.501289670540389
+good practice:::4.927253685157205
+[5]:::18.011362060350606
 set:::2.3978952727983707
 learn:::2.9444389791664403
-data interchange system between front-end:::3.295836866004329
+100+ answers:::5.730099782973574
 i:::0.0
-hadoop map-reduce:::8.187855443695623
-people:::2.70805020110221
+machine learning:::8.252446090246952
 has use since 1990s with credit:::3.9318256327243257
+en français : comment apprenez-vous le big data ?:::6.966967138613983
 has use with giving credit for coining:::4.04305126783455
 nonlinear system identification:::7.370230641807081
-now should confident about overall working:::4.465908118654584
-has use:::1.3862943611198906
 answer:::2.772588722239781
-has use since 1990s with credit to john mashey for coining:::10.245373679001421
-sexy side:::3.6888794541139363
+growing field:::8.958925938694943
+quite basic understanding:::4.997212273764115
 machine learning skills:::4.382026634673881
-algo:::4.430816798843313
-you 're just looking:::2.833213344056216
-such high volume:::4.804021044733257
-map-reduce:::7.430707082545968
-java google 's python class | python education | google developers coursera:::10.64811176060366
+which is the best place to start learning big data?:::6.049733455231958
+sql database:::7.293697720601438
+learn about big data technology:::6.630683385642372
+pentaho products:::9.736724334658026
 most commonly used:::3.2188758248682006
+[6]:::3.8066624897703196
 | coursera:::6.2766434893416445
 your big data solution:::3.784189633918261
-now should confident:::2.302585092994046
-high-velocity:::6.261491684321042
 answers related questions:::3.2188758248682006
-source:::2.6390573296152584
 file system:::4.189654742026425
+2) download and setup your big data solution:::8.259716961021523
 missing pieces:::10.25079374647076
+the easiest thing to do is just use a pre-built virtual machine which just about any hadoop provider makes freely available [1], and then run it locally.  you could also use a service like amazon web services as well.  most commonly people will use the map-reduce framework and hive for crunching large volumes of data. since you're just looking to learn, you wont need terabytes, or even gigabytes of data to play with so getting access to a 100 node cluster won't be a priority.  although there are certainly challenges to overcome and understand once you start to get into multi-node environments.:::22.3680708932178
 software debugging class online | udacity mit ocw:::18.561408402482233
-cool kid on block:::4.709530201312334
-however data:::9.640172836532642
-3vs model:::9.90733016025358
+red:::5.673323267171493
 node cluster:::5.918893854273146
+pig tutorial:::7.028201432058005
+shortage:::6.1903154058531475
+for the sake of providing a somewhat simple answer, i will assume the big data tool you want to use is the hadoop stack.  and for the sake of not providing an overly simple answer, that you're not looking for an already built industry solution or saas provider.  generally speaking, nosql databases aren't really used for analytics (but may be a source).:::19.000775059563374
 contact:::0.0
+adding:::6.135564891081739
 constantly moving target:::3.4011973816621555
-yourself:::3.6635616461296463
-big data:::5.655991810819852
+good tricks from my blog:::4.276666119016055
 area:::1.9459101490553132
+big data tutorials:::5.017279836814924
 much data:::2.8903717578961645
-mapr:::7.73718007783463
-set with forms of integration:::2.302585092994046
+now that you've solved your big data problem and have your data in a manageable format, its time to dazzle your boss with some sweet reports.  most enterprise architectures that leverage hadoop will still have a sql database for storing and reporting data out of hadoop (you will quickly come to realize that map-reduce has a very long response time, even on small data sets).  loading data out of hadoop and into a sql database is good practice for the real world but for the sake of learning the big data side of it, not necessary.  there's several (free) reporting tools out there that will connect to hadoop/hive directly and will work fine for learning purposes [4].  if you want to be the cool kid on the block (and super employable at large companies), i would pick up tableau (product) [5].  you could also lend yourself into picking up some predictive modeling and machine learning skills with some of the tools that are out there [6], and maybe start calling yourself a data scientist!:::22.3680708932178
+watch more at try.quandl.com:::4.844187086458591
+terminal itself:::6.932447891572509
 its transformation:::2.5649493574615367
 widely used:::5.805134968916488
 its:::2.833213344056216
 modeled:::5.855071922202427
-batch processing:::10.245373679001421
-overall mechanism behind hadoop:::8.974111581113318
+the r project for statistical computing:::7.698029170272805
+understanding of concepts:::6.617402977974478
+article:::5.337538079701318
 big data?to:::7.04141166379481
 volume:::3.6635616461296463
 beneficiary:::5.541263545158426
 volumes of log data:::2.8903717578961645
-solve:::4.356708826689592
 data useful:::2.302585092994046
 information assets characterized by high volume:::4.727387818712341
+cardinals:::6.282266746896006
+basic understanding:::4.8283137373023015
 private:::2.772588722239781
 google file system:::3.091042453358316
 sources:::2.833213344056216
-has use with giving credit to john mashey for coining:::9.080117784926209
 applied:::4.127134385045092
 data mining:::8.675734219544788
-kid:::3.8918202981106265
-big data infrastructure:::5.659482215759621
+2012:::5.568344503761097
+2011:::5.605802066295998
 distributed environment:::3.58351893845611
 choose:::3.1354942159291497
-quantinsti.com view:::1.3862943611198906
-mongodband hive:::8.252446090246952
 java google:::5.541263545158426
+learning spark:::6.52649485957079
 set of techniques with forms:::2.5649493574615367
-traditionally used:::4.110873864173311
-open source:::4.948759890378168
-quality code:::3.1354942159291497
+curt monash:::11.307683224791706
+ubuntu linux:::6.786716950605081
+under the hood: scheduling mapreduce jobs more efficiently with corona:::10.806328236685879
+oracle - java developer tutorials and online training:::7.313886831633462
 responsive enough:::5.3612921657094255
-service like amazon web services:::4.007333185232471
+stuttgart:::5.978885764901122
+front-end engineers:::6.302618975744905
 interactive programming:::6.393590753950631
-| udacity:::8.907747686788648
+udacity - applied cryptography and encryption class online | udacity, software testing | udacity, software debugging class online | udacity:::8.637993891561942
 section for engineers:::4.060443010546419
-hadoop:::5.940171252720432
-#abcdefghijklmnopqrstuvwxyz · careers:::7.854381210652365
-its transformation into value:::3.58351893845611
+ big data analysis:::6.727431724850855
 quora page:::6.238324625039508
-inductive statistics:::4.605170185988092
-start:::2.0794415416798357
-technology:::2.8903717578961645
+python/java:::7.316548177182976
+http://pig.apache.org/docs/r0.7....:::9.818365299119293
+stanford university - computer science 101:::9.46877384406884
+tricks from my blog:::4.543294782270004
 section for front-end engineers:::6.583409222158765
-quandl:::9.243678431586693
-target:::3.58351893845611
-#abcdefghijklmnopqrstuvwxyz about · careers:::9.704548689918736
-should confident about working of hadoop:::5.017279836814924
+hadoop | hadoop developer certification | hadoop online | hadoop certificate | hadoop training atlanta:::7.302496423727326
+apache spark 2:::7.854381210652365
+following resources:::6.008813185442595
 coursera udacity:::9.4539138048019
 service:::0.0
 its time dazzle with sweet reports:::4.6443908991413725
 ability learn for free through trial/dev license:::4.343805421853684
 unstructured data:::10.640005476793887
-your response:::3.5553480614894135
-big data useful:::3.2188758248682006
-ask new question:::3.4339872044851463
-may date:::1.6094379124341003
+hadoop tutorial - ydn:::8.274866820685254
+little bit about data processing:::4.61512051684126
+1. mapreduce: simplified data processing on large clusters https://www.usenix.org/legacy/pu...:::12.864985460417314
+read more at interana.com:::4.04305126783455
 multivariable calculus:::7.864419904994565
-modeling:::4.532599493153256
+practice:::5.849324779946859
+spark here:::5.093750200806762
 moving target:::10.360437603332802
-new forms of integration:::3.332204510175204
 has use with credit:::3.367295829986474
-consensual definition:::3.6109179126442243
 focus:::18.119575651168443
-program:::2.3978952727983707
 information assets characterized by such volume:::1.3862943611198906
-set of techniques:::2.772588722239781
+bit:::5.948034989180646
 data professionals:::4.2626798770413155
 data?to:::1.6094379124341003
-enable:::17.87943452020381
 block:::3.367295829986474
 avro:::6.042632833682381
-paper 1 above:::3.295836866004329
+ analyzing big data:::4.762173934797756
 has use since 1990s with credit to john mashey:::1.9459101490553132
+which is the best site to learn and practice big data online?:::3.871201010907891
 python:::4.820281565605037
-laws:::4.007333185232471
+webinar: how to commercialize your company data.:::6.066108090103747
 information assets characterized:::3.6375861597263857
 high volume:::4.68213122712422
 volumes:::4.836281906951478
-kid on block:::3.8918202981106265
-should confident:::4.624972813284271
-more answers related questions:::2.70805020110221
 it:::1.0986122886681098
 stealth mode startup:::5.365976015021851
-traditionally has described by 3vs:::3.6375861597263857
+hortonworks sandbox:::11.106159511129016
+if you are more of an front-end guy, i would suggest studying mongodband hive. then read a bit about hbase. for hands on, set up a mongodb or hive server, load a reasonably big dataset (~500 gb or so) and then write a front end. see if it is responsive enough. you may want to read on avro as well (http://avro.apache.org/). avro is most commonly used data interchange system between front-end and the back-end big data store such as hbase.:::20.57631142360365
 multi-node environments:::5.472270673671475
 has use since 1990s with giving credit for coining:::4.709530201312334
-has use since 1990s with giving credit to john mashey:::9.496721598694915
 has use with giving credit to john mashey:::9.625491749673769
-books:::22.3680708932178
+field:::5.7430031878094825
+who can learn big data?:::7.664346632098617
 predictive modeling:::10.48355001802591
-overall mechanism:::4.07753744390572
-has use with credit for coining:::3.4965075614664802
-multi node cluster:::6.248042874508429
+updated 206w ago:::4.897839799950911
 1 cloudera support hortonworks sandbox:::8.386856689688234
 algorithms:::5.220355825078324
-big data analysis analyzing big data data data analysis big data data science learning:::6.025865973825314
 ability learn for free:::3.367295829986474
+works:::5.655991810819852
 yesno 27.1 k views:::4.31748811353631
-should confident about overall working of hadoop:::4.110873864173311
+best place:::5.955837369464831
+learn about it.i:::5.765191102784844
 set with forms:::2.3978952727983707
+learn about big data technology like hadoop/spark:::8.259716961021523
 guy:::3.58351893845611
-tools:::2.70805020110221
+two courses:::4.955827057601261
 cost-free:::6.513230110912307
-information assets characterized by volume:::4.6443908991413725
+hadoop vm:::8.353497098745448
 now should confident about working:::3.5553480614894135
-get:::1.6094379124341003
+quite understanding:::9.903437551286085
+now used:::3.1354942159291497
 front-end guy:::6.042632833682381
+handling data:::8.966483779064431
 big-data:::4.990432586778736
-you 're looking:::3.4339872044851463
+ learning:::17.913723594647692
 quantinsti:::12.245403929493355
 google map-reduce:::7.460490305825338
+computer programs | udacity:::6.565264970035361
+welcome to apache™ hadoop®!:::8.981681639973862
 product:::1.3862943611198906
-has use since 1990s:::1.3862943611198906
 question:::3.367295829986474
+360 · answer requested by daniel h kim promoted:::10.336340823963159
 large volumes:::4.919980925828125
-more:::0.0
-quant trader:::5.420534999272286
-analytical methods:::3.5263605246161616
+red sox friend:::7.585281078639126
+big data books & reference materials:::4.997212273764115
+alannah:::9.318207742845189
 giving credit to john mashey for coining:::8.881002624255569
-multiple sources:::4.61512051684126
 other languages:::8.305484017727691
+related questionsmore answers below:::5.0238805208462765
 computer programs | udacity datacamp:::5.978885764901122
-successful algo:::11.185018441954195
-77 upvotes promoted:::6.025865973825314
-traditionally has described:::2.70805020110221
+your big data problem:::4.605170185988092
 set with new forms:::3.091042453358316
 udacity intro:::9.36220272128543
-commonly used:::2.772588722239781
-statistics:::3.6109179126442243
-log data:::3.332204510175204
-mechanism behind hadoop:::9.139488631004232
-data:::1.791759469228055
+udacity:::11.484351078032905
+http://www.splunk.com/:::8.252446090246952
+updated frequently:::8.153637486385282
 environments:::4.499809670330265
 use:::0.6931471805599453
-its definition:::2.3978952727983707
-section:::3.044522437723423
-6 months:::6.274762021241939
-used:::2.772588722239781
-set of techniques with new forms:::2.772588722239781
+friendship structure:::10.540302448505601
+359 upvotes · answer requested by daniel h kim related questionsmore answers below:::16.234672804275206
+big data courses:::10.48355001802591
 two papers:::2.833213344056216
 that:::1.6094379124341003
-you want:::2.0794415416798357
 high:::2.1972245773362196
+about · careers:::5.4680601411351315
 british columbia | coursera:::4.6913478822291435
 about data:::1.791759469228055
 interactive programming in python:::5.438079308923196
-system identification:::2.302585092994046
+sitemap:::6.2766434893416445
 read:::2.0794415416798357
 such volume:::3.6635616461296463
-should confident about working:::3.4339872044851463
-insights:::4.219507705176107
-new question:::2.302585092994046
-has use since 1990s with giving credit:::4.356708826689592
+2. the google file system: http://static.googleusercontent....:::4.454347296253507
+120.3 k views:::4.543294782270004
+359 upvotes · answer requested by daniel h kim related questionsmore answers:::16.145494549470754
 206w:::10.768948040692958
 follows:::4.442651256490317
-capture:::4.330733340286331
-has use since 1990s with giving credit to john mashey for coining:::9.494165014100659
+is learning big data useful?:::7.75491027202143
+friends:::5.616771097666572
 specific technology:::3.4339872044851463
-real world problem:::7.114769448366463
+relevant:::5.971261839790462
 infer:::5.948034989180646
 really high:::2.302585092994046
-solving for your use case:::2.9444389791664403
-solving:::4.605170185988092
+359 · answer below:::5.0238805208462765
+359 upvotes · answer:::8.370084326378025
+problems:::6.960347729101308
+originally answered: how do i learn about big data analysis implementation?i think the best way to learn anything is to actually do it.  luckily for us, there's a ton big data technologies and analytic tools which are open source or give you the ability to learn for free through a trial/dev license.  so here is what i would do.:::13.733805803188675
 how applied:::3.258096538021482
-data growth challenges:::8.631592731724734
+hadoop: the definitive guide:::9.780132773506024
 university:::2.995732273553991
-part:::2.6390573296152584
-common use cases:::3.9512437185814275
+capture within your data:::5.43372200355424
 2001 research report:::2.995732273553991
 more of guy:::3.367295829986474
+look at two courses on edx provided by berkeley instructors:::8.74369111054302
 read on avro:::6.066108090103747
-large volumes of log data:::5.3706380281276624
+sql:::5.993961427306569
 more of front-end guy:::3.258096538021482
+thank you for your feedback!:::6.877296071497429
 computer science stanford university:::6.490723534502507
 ability learn:::2.995732273553991
 today:::2.5649493574615367
 unstructured:::6.29156913955832
 data sets:::4.248495242049359
-your data:::2.302585092994046
-example wordcount job:::2.302585092994046
-gartner:::5.3981627015177525
+4) analytics & visualization: the sexy side of big data & bi:::8.160232492367689
 high information density:::1.3862943611198906
-technology for its transformation into value:::2.9444389791664403
-introduction:::5.2574953720277815
+the big data crunching salaries are really high, i am a beneficiary of the same. what is the state of the industry?is big data over-hyped? is ...:::13.799993793224203
 node hadoop cluster:::7.849323818040561
-should confident about overall working:::4.394449154672439
-yesno k views:::2.302585092994046
+sqlzoo:::13.053279073166102
 stanford university:::7.1785454837637
-back-end batch processing:::7.926602599181384
 set with new forms of integration:::3.912023005428146
 now should confident about working of hadoop:::5.1647859739235145
-driving forces:::8.353497098745448
 low information density:::3.8918202981106265
 data interchange system:::5.700443573390687
 has use with credit to john mashey for coining:::7.382746449738912
-tableau:::4.48863636973214
 meta group now gartner defined:::8.868554040531201
-performance:::3.091042453358316
 privacy · terms:::8.337348564497175
-responsive:::4.343805421853684
 analytic tools:::4.290459441148391
+information assets:::5.5053315359323625
+now you should be confident about the overall working of hadoop and the driving forces in big-data. now you have to choose in which sub-field you want to work on? big-data analytic (writing map-reduce jobs and pig/hive codes plus some machine learning) or big-data infrastructure (hadoop file system, map-reduce infrastructure etc.). based on that you can continue exploring this area. edit: adding a section for the front-end engineers:::19.277028437928983
+blogs, articles:::4.852030263919617
+paper 1:::2.0794415416798357
+good practice for real world:::6.248042874508429
+information assets characterized by such high volume:::5.198497031265826
+ big data:::6.498282149476434
+companies:::5.4116460518550396
+java:::5.855071922202427
+about big data:::6.942156705699469
+big data tutorials pig tutorial learning spark:::8.082402253926244
+sizes:::3.9318256327243257
+technology for its transformation:::2.70805020110221
+ data science:::8.274866820685254
+digestible:::9.028938392241612
+their favorite team:::9.481359383531425
+has use since 1990s with credit for coining:::4.1588830833596715
+they:::5.736572297479192
+sign in:::4.997212273764115
+look at two courses on edx:::4.787491742782046
+jaspersoft :: jaspersoft business intelligence software:::9.776676385669742
+them:::5.752572638825633
+data fusion machine learning:::5.84354441703136
+python class | python education | google developers coursera:::8.370084326378025
+data preparation:::5.869296913133774
+quite basic understanding of concepts:::6.049733455231958
+27.2 k views:::4.290459441148391
+concepts:::4.3694478524670215
+bit in machine learning:::5.220355825078324
+359 · answer requested by daniel h kim related questionsmore answers below:::11.552271170311661
+cool kid:::2.0794415416798357
+ data:::5.365976015021851
+starting:::5.971261839790462
+updated 206w:::5.455321115357702
+set of techniques with forms of integration:::3.713572066704308
+yesno 120.3 k views:::4.983606621708336
+360 upvotes · answer requested by daniel h kim promoted:::11.28129601000572
+what does the future of big data look like?:::4.727387818712341
+hadoop tutorial:::7.631916513071252
+your own machine:::6.091309882077698
+pieces:::3.713572066704308
+360 upvotes · answer requested by daniel h kim promoted by quandl webinar:::12.958796840533992
+has use with credit to john mashey:::4.394449154672439
+file baseball_friends:::10.562457281294487
+data science:::7.631916513071252
+computer science:::5.752572638825633
+problem sets:::4.553876891600541
+traditionally, big data has been described by the "3vs": volume, variety, velocity.  what is a real analytics problem that is best solved using big data tools?  what kind of metrics do you want to capture?  the most common use cases today involve scraping large volumes of log data.  this is because log data tends to be very unstructured, can come from multiple sources, and especially for popular websites, can be huge (terabytes+ a day).  thus having a framework for performing distributed computing tasks is essential to solve this problem.:::18.934083687574354
+ data analysis:::6.375024819828097
+data scientist:::8.337348564497175
+published in 2011 as 2012:::3.970291913552122
+get into environments:::4.51085950651685
+mechanism:::4.7535901911063645
+little bit in machine learning:::7.364547014255642
+31:::1.791759469228055
+look at two courses:::6.135564891081739
+data interchange system between front-end:::3.295836866004329
+77 upvotes:::10.525809827315793
+good practice for world:::5.75890177387728
+datacamp - learn python for data science - online course, free introduction to r programming online course:::9.274066062856727
+hadoop map-reduce:::8.187855443695623
+aaden:::10.866184657224439
+people:::2.70805020110221
+quite understanding of concepts:::5.560681631015528
+practice for world:::5.14166355650266
+will able:::5.978885764901122
+more enough:::5.796057750765372
+sign up at honeypot.io:::4.204692619390966
+now should confident about overall working:::4.465908118654584
+has use:::1.3862943611198906
+has use since 1990s with credit to john mashey for coining:::10.245373679001421
+sexy side:::3.6888794541139363
+ask:::5.811140992976701
+algo:::4.430816798843313
+you 're just looking:::2.833213344056216
+such high volume:::4.804021044733257
+map-reduce:::7.430707082545968
+java google 's python class | python education | google developers coursera:::10.64811176060366
+http://www.sas.com/:::5.375278407684165
+now should confident:::2.302585092994046
+high-velocity:::6.261491684321042
+source:::2.6390573296152584
+big data technology like hadoop/spark:::8.237743803890933
+cool kid on block:::4.709530201312334
+however data:::9.640172836532642
+3vs model:::9.90733016025358
+359 upvotes · answer requested below:::9.033722518098907
+yourself:::3.6635616461296463
+big data:::5.655991810819852
+commands:::6.091309882077698
+359 upvotes · answer requested:::8.716207971151853
+python class | python education:::9.676461473957694
+mapr:::7.73718007783463
+set with forms of integration:::2.302585092994046
+360 · answer:::5.883322388488279
+this:::4.672828834461906
+what are the downsides of being a data scientist?:::7.53689712956617
+batch processing:::10.245373679001421
+big data technology:::5.655991810819852
+look:::5.75890177387728
+overall mechanism behind hadoop:::8.974111581113318
+simple data:::5.159055299214529
+brown university - on-line offering (introduction to programming languages):::8.345455428161928
+solve:::4.356708826689592
+updatecancel:::7.494430215031565
+name:::5.948034989180646
+know:::5.75890177387728
+page:::4.653960350157523
+shortage of developers:::6.55250788703459
+360 upvotes · answer requested:::7.698029170272805
+updated:::5.796057750765372
+basics:::6.0014148779611505
+has use with giving credit to john mashey for coining:::9.080117784926209
+scientist:::6.100318952020064
+ chris schrader, business intelligence consultant:::9.814820259819962
+kid:::3.8918202981106265
+big data infrastructure:::5.659482215759621
+bit about data processing:::5.303304908059076
+quantinsti.com view:::1.3862943611198906
+mongodband hive:::8.252446090246952
+next step:::8.345455428161928
+although hadoop is traditionally used for back-end batch processing (clean up, filtering, analytics etc.) this is going to change soon. people have already started using it as their primary data store as well (replacing rdbms engines like mysql). there is also lots of literature on real time big data processing and alternatives to hadoop. best of luck!:::17.902162759698353
+traditionally used:::4.110873864173311
+symmetric:::7.942717540573791
+look at two courses on edx provided:::6.0014148779611505
+insidebigdata - insidebigdata: clear, concise insights on big data strategies:::13.665062016757188
+next time:::4.90527477843843
+open source:::4.948759890378168
+quality code:::3.1354942159291497
+359 upvotes · answer below:::8.583916823459145
+the google file system - http://static.googleusercontent....:::4.59511985013459
+service like amazon web services:::4.007333185232471
+| udacity:::8.907747686788648
+this page may be out of date. save your draft before refreshing this page.submit any pending changes before refreshing this page.:::8.466320861042481
+hadoop:::5.940171252720432
+your machine:::4.804021044733257
+checkout:::6.300785794663244
+#abcdefghijklmnopqrstuvwxyz · careers:::7.854381210652365
+its transformation into value:::3.58351893845611
+inductive statistics:::4.605170185988092
+your hands:::8.274866820685254
+3) solve your big data problem:::6.80128303447162
+start:::2.0794415416798357
+360 upvotes · answer:::6.47543271670409
+technology:::2.8903717578961645
+quandl:::9.243678431586693
+friends list:::4.727387818712341
+related tasks:::8.430327258394575
+good tricks:::5.771441123130016
+target:::3.58351893845611
+#abcdefghijklmnopqrstuvwxyz about · careers:::9.704548689918736
+updatecancel answer wiki basics cs fundamentals brown university:::10.17709605525655
+should confident about working of hadoop:::5.017279836814924
+step:::5.863631175598097
+360 · answer requested by daniel h kim:::8.329175442077402
+time:::5.365976015021851
+your response:::3.5553480614894135
+big data useful:::3.2188758248682006
+ask new question:::3.4339872044851463
+may date:::1.6094379124341003
+modeling:::4.532599493153256
+new forms of integration:::3.332204510175204
+consensual definition:::3.6109179126442243
+promoted by interana:::6.163314804034641
+program:::2.3978952727983707
+set of techniques:::2.772588722239781
+related questions:::4.795790545596741
+problem:::6.049733455231958
+very unstructured:::8.770594329891145
+enable:::17.87943452020381
+still relevant:::10.656270630991948
+edx - introduction to apache spark:::11.07827353542708
+your data problem:::5.003946305945459
+paper 1 above:::3.295836866004329
+laws:::4.007333185232471
+promoted by quandl:::6.163314804034641
+kid on block:::3.8918202981106265
+should confident:::4.624972813284271
+answer wiki:::5.093750200806762
+more answers related questions:::2.70805020110221
+traditionally has described by 3vs:::3.6375861597263857
+practice for real world:::5.683579767338681
+has use since 1990s with giving credit to john mashey:::9.496721598694915
+books:::22.3680708932178
+red sox fans:::10.497449555174734
+did you know 70% of organizations struggle to find data insights?:::9.412872969386267
+360 · answer requested:::5.993961427306569
+overall mechanism:::4.07753744390572
+has use with credit for coining:::3.4965075614664802
+multi node cluster:::6.248042874508429
+co-founder:::8.875426919818963
+#abcdefghijklmnopqrstuvwxyz:::13.65514577720943
+basic problems:::4.948759890378168
+big data analysis analyzing big data data data analysis big data data science learning:::6.025865973825314
+scala/python:::8.370084326378025
+should confident about overall working of hadoop:::4.110873864173311
+tools:::2.70805020110221
+information assets characterized by volume:::4.6443908991413725
+get:::1.6094379124341003
+course:::6.008813185442595
+place:::5.627621113690637
+you 're looking:::3.4339872044851463
+42k views:::8.321421586897879
+number of red sox fans:::8.345455428161928
+359 · answer requested by daniel h kim related questionsmore answers:::11.024725278007823
+has use since 1990s:::1.3862943611198906
+more:::0.0
+quant trader:::5.420534999272286
+tableau software:::9.560363239834537
+analytical methods:::3.5263605246161616
+cloudera support:::8.513185170018698
+multiple sources:::4.61512051684126
+shell commands:::6.566672429803241
+successful algo:::11.185018441954195
+what are the best books to learn big data?:::6.9167150203536085
+77 upvotes promoted:::6.025865973825314
+traditionally has described:::2.70805020110221
+i would advice:::5.5093883366279774
+commonly used:::2.772588722239781
+statistics:::3.6109179126442243
+log data:::3.332204510175204
+mechanism behind hadoop:::9.139488631004232
+big data university - what is big data? take our free big data course to find out, learn spark:::8.690642169706594
+data:::1.791759469228055
+big data updated:::5.8377304471659395
+basic understanding of concepts:::6.948897222313312
+its definition:::2.3978952727983707
+section:::3.044522437723423
+6 months:::6.274762021241939
+used:::2.772588722239781
+experience:::6.100318952020064
+blog:::5.560681631015528
+set of techniques with new forms:::2.772588722239781
+what is big data and what is its use?:::4.532599493153256
+growing:::6.025865973825314
+you want:::2.0794415416798357
+360 · answer requested by daniel h kim promoted by quandl webinar:::11.703752414807894
+joydip datta:::12.64484679648199
+in other languages:::8.237743803890933
+system identification:::2.302585092994046
+77 upvotes rahul agarwal:::12.364690475624894
+should confident about working:::3.4339872044851463
+insights:::4.219507705176107
+new question:::2.302585092994046
+has use since 1990s with giving credit:::4.356708826689592
+capture:::4.330733340286331
+sparkhub - apache spark tutorials, documentation, courses and resources all in one place | sparkhub:::13.985323372292621
+published:::6.025865973825314
+has use since 1990s with giving credit to john mashey for coining:::9.494165014100659
+done:::18.07761145052501
+little bit:::8.4040244933106
+mapreduce:::9.412872969386267
+new tech academy - learn big data: the hadoop ecosystem masterclass:::10.681182661619935
+real world problem:::7.114769448366463
+person:::5.771441123130016
+edx:::7.440146680662688
+safe:::6.210600077024653
+solving for your use case:::2.9444389791664403
+solving:::4.605170185988092
+data growth challenges:::8.631592731724734
+how much data is "big data"? is there classification for various levels of "big data" by amount of data processed or other constraints, like f...:::17.783103398331015
+part:::2.6390573296152584
+common use cases:::3.9512437185814275
+how difficult is to learn big data (data science)?:::7.183870715062453
+their:::6.1092475827643655
+359 · answer requested:::5.170483995038151
+large volumes of log data:::5.3706380281276624
+ hide this message.:::6.338594078203183
+ready:::6.008813185442595
+your data:::2.302585092994046
+example wordcount job:::2.302585092994046
+gartner:::5.3981627015177525
+technology for its transformation into value:::2.9444389791664403
+value:::3.367295829986474
+introduction:::5.2574953720277815
+should confident about overall working:::4.394449154672439
+[1]:::3.1354942159291497
+yesno k views:::2.302585092994046
+back-end batch processing:::7.926602599181384
+mapreduce: simplified data processing on large clusters - 6th symposium on operating systems design and implementation  technical paper:::13.16666921628534
+tricks:::6.335054251498059
+resources:::6.008813185442595
+originally answered: how do i learn about big data?to know about big data infrastructure and technology i would suggest start by reading these two papers. please do not skip reading these papers.:::11.89357178586167
+driving forces:::8.353497098745448
+terminal:::6.47543271670409
+enough:::6.3473892096560105
+still have a question? ask your own!:::4.962844630259907
+how to learn big data - quora:::7.9105906122564775
+updated more frequently:::9.608109273449877
+tableau:::4.48863636973214
+performance:::3.091042453358316
+responsive:::4.343805421853684
+k views:::4.418840607796598
+hadoop sandbox - hortonworks:::9.520101889570842

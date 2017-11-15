@@ -3,17 +3,18 @@ package com.dataminer.crawler;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
-import java.util.Collection;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
 import org.jsoup.Jsoup;
+import org.jsoup.helper.StringUtil;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
+import org.jsoup.nodes.Node;
+import org.jsoup.nodes.TextNode;
 import org.jsoup.select.Elements;
-
-import com.dataminer.tfidf.ngram.NGram;
-import com.google.common.collect.Lists;
+import org.jsoup.select.NodeTraversor;
+import org.jsoup.select.NodeVisitor;
 
 public class BingCN {
 	private static final Logger LOG = Logger.getLogger(BingCN.class);
@@ -40,7 +41,7 @@ public class BingCN {
 		}
 	}
 
-	public static Collection<String> sample(String q) throws IOException {
+	public static String sample(String q) throws IOException {
 
 		Document doc = get(q);
 		Elements eles = doc.select("ol#b_results > li.b_algo");
@@ -50,14 +51,13 @@ public class BingCN {
 		String href = e.select("h2 > a").attr("href");
 		LOG.debug(href);
 
-		String content = Jsoup.connect(href).get().text();
-		Collection<String> nGramTerms = NGram.ngramDocumentTerms(Lists.newArrayList(1, 2, 3), content);
-		return nGramTerms;
+		String content = getContent(href);
+		return content;
 	}
 
 	public static String getContent(String href) throws IOException {
-		String content = Jsoup.connect(href).get().text();
-		return content;
+		Document doc = Jsoup.connect(href).get();
+		return TextExtractor.getText(doc);
 	}
 
 	private static Document get(String q) throws IOException {

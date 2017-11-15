@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import com.dataminer.tfidf.TfIdf;
 
-public class TFIDFChecker extends Thread {
+public class TFIDFChecker {
 
 	public static void main(String[] args) throws IOException {
 
