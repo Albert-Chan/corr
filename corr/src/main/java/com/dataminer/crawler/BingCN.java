@@ -7,14 +7,9 @@ import java.net.URLEncoder;
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
 import org.jsoup.Jsoup;
-import org.jsoup.helper.StringUtil;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
-import org.jsoup.nodes.Node;
-import org.jsoup.nodes.TextNode;
 import org.jsoup.select.Elements;
-import org.jsoup.select.NodeTraversor;
-import org.jsoup.select.NodeVisitor;
 
 public class BingCN {
 	private static final Logger LOG = Logger.getLogger(BingCN.class);
@@ -36,8 +31,8 @@ public class BingCN {
 		for (Element e : eles) {
 			String header = e.select("h2").text();
 			String href = e.select("h2 > a").attr("href");
-			// LOG.debug(header);
-			// LOG.debug(href);
+			LOG.debug(header);
+			LOG.debug(href);
 		}
 	}
 
@@ -49,6 +44,7 @@ public class BingCN {
 		Element e = eles.first();
 		String header = e.select("h2").text();
 		String href = e.select("h2 > a").attr("href");
+		LOG.debug(header);
 		LOG.debug(href);
 
 		String content = getContent(href);
